@@ -2,7 +2,6 @@ const fs = require('fs')
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const DashboardPlugin = require('webpack-dashboard/plugin')
 
 const rules = require('./webpack.rules')
 module.exports = {
@@ -15,6 +14,9 @@ module.exports = {
     filename: 'main.js'
   },
   devtool: 'cheap-module-eval-source-map',
+  resolve: {
+    modules: ['node_modules', 'src']
+  },
   module: {
     rules: rules.concat([
       {
@@ -80,7 +82,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpe?g|gif)$/,
+        test: /\.(png|jpe?g|gif|svg)$/,
         use: 'url-loader?limit=8192&name=image/[hash].[ext]'
       }
     ])
@@ -89,7 +91,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'template/index.html'
     }),
-    new DashboardPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.ProvidePlugin({
@@ -108,7 +109,7 @@ module.exports = {
     historyApiFallback: true,
     host: '0.0.0.0',
     disableHostCheck: true,
-    setup(app){
+    before(app){
       app.use(function(req, res, next) {
         const p = path.join(__dirname, '../api', /\.json$/.test(req.path) ? req.path : req.path + '.json')
         if (fs.existsSync(p)) {

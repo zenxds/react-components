@@ -1,0 +1,28 @@
+@import '~less/variables.less';
+
+:global {
+  .drag-list {
+    margin-top: 40px;
+  }
+}
+
+.item() {
+  padding: 5px 10px;
+  font-size: 20px;
+  border-top: 1px solid #999;
+}
+
+.item {
+  .item();
+
+  &:last-child {
+    border-bottom: 1px solid #999;
+  }
+}
+
+.item-active {
+  .item();
+
+  color: #fff;
+  background: @main-color;
+}

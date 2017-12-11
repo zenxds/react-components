@@ -1,7 +1,7 @@
 /*
  * 全局样式
  */
-
+@import './variables.less';
 
 :global {
   html, body, #app, .app-root {
@@ -19,7 +19,7 @@
   }
   .app-menu {
     width: 200px;
-    background: #404040;
+    background: @menu-bg-color;
     padding: 20px 0;
   }
   .app-content {

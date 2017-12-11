@@ -14,7 +14,9 @@ module.exports = {
     filename: 'main.js',
     chunkFilename: '[name].[hash].js'
   },
-  // devtool: 'cheap-module-source-map',
+  resolve: {
+    modules: ['node_modules', 'src']
+  },
   module: {
     rules: rules.concat([{
         test: /\.jsx?$/,
@@ -89,10 +91,10 @@ module.exports = {
         ])
       },
       {
-        test: /\.(png|jpe?g|gif)$/,
+        test: /\.(png|jpe?g|gif|svg)$/,
         use: [
-          'url-loader?limit=8192&name=image/[hash].[ext]',
-          'img-loader'
+          'url-loader?limit=8192&name=image/[hash].[ext]'
+          // 'img-loader'
         ]
       }
     ])
