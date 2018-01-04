@@ -17,9 +17,27 @@ const {
 
 const menuCfg = [
   {
-    title: '首页',
+    title: 'Count',
     link: '/',
-    icon: 'home'
+    icon: ''
+  },
+
+  {
+    title: '拖拽',
+    link: '/drag',
+    icon: ''
+  },
+
+  {
+    title: 'Tree',
+    link: '/tree',
+    icon: ''
+  },
+
+  {
+    title: '动态Tree',
+    link: '/dtree',
+    icon: ''
   }
 ]
 
