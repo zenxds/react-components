@@ -28,7 +28,9 @@ class Page extends Component {
 
   getTree() {
     return (
-      <Tree loadNode={this.loadNode.bind(this)} />
+      <Tree loadNode={this.loadNode.bind(this)} isDir={item => {
+        return true
+      }} />
     )
   }
 

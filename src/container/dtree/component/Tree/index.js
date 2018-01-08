@@ -1,4 +1,7 @@
 import { Component } from 'react'
+import { Icon } from 'antd'
+
+import styles from './tree.less'
 
 export class Tree extends Component {
   constructor(props, context) {
@@ -27,13 +30,16 @@ export class Tree extends Component {
         }}
         {...props}
         key={item.title}
-        title={item.title} renderNode={this.renderNode.bind(this)} />
+        title={item.title}
+        isDir={this.props.isDir(item)}
+        renderNode={this.renderNode.bind(this)}
+      />
     )
   }
 
   render() {
     return (
-      <ul>
+      <ul className={styles.tree}>
         { this.state.data.map(item => {
           return this.renderNode(item, this.props)
         }) }
@@ -94,18 +100,22 @@ export class TreeNode extends Component {
   }
 
   render() {
+    const { isDir } = this.props
     const children = this.state.data.map(item => {
       return this.props.renderNode(item, this.props)
     })
 
     return (
       <li>
-        <span onClick={this.onToggle.bind(this)}>
+        <div onClick={this.onToggle.bind(this)} className={styles['tree-title']}>
+          { isDir ? <Icon type={ this.state.open ? 'caret-down' : 'caret-right'} className={styles.arrow} /> : null }
+          { isDir ? <Icon type={ this.state.open ? 'folder-open' : 'folder'} className={styles.folder} /> : null}
           { this.props.title }
-        </span>
+        </div>
+
         {
           this.state.data.length ?
-          <ul style={{ display: this.state.open ? 'block' : 'none' }}>
+          <ul className={ this.state.open ? styles.open : ''}>
           {
             children
           }
