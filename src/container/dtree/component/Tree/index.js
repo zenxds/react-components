@@ -32,6 +32,7 @@ export class Tree extends Component {
         key={item.title}
         title={item.title}
         isDir={this.props.isDir(item)}
+        level={props.level ?  props.level + 1 : 1}
         renderNode={this.renderNode.bind(this)}
       />
     )
@@ -100,14 +101,20 @@ export class TreeNode extends Component {
   }
 
   render() {
-    const { isDir } = this.props
+    const { isDir, level } = this.props
     const children = this.state.data.map(item => {
       return this.props.renderNode(item, this.props)
     })
+    // 为了hover时标题背景变色，动态计算padding的距离
+    const indent = (level - 1) * 32
 
     return (
       <li>
-        <div onClick={this.onToggle.bind(this)} className={styles['tree-title']}>
+        <div
+          style={{ paddingLeft: indent }}
+          className={styles['tree-title']}
+          onClick={this.onToggle.bind(this)}
+        >
           { isDir ? <Icon type={ this.state.open ? 'caret-down' : 'caret-right'} className={styles.arrow} /> : null }
           { isDir ? <Icon type={ this.state.open ? 'folder-open' : 'folder'} className={styles.folder} /> : null}
           { this.props.title }
