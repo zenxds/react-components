@@ -1,0 +1,58 @@
+[
+    {
+        "name": "age",
+        "type": "string"
+    },
+    {
+        "name": "sex",
+        "type": "integer"
+    },
+    {
+        "name": "cp",
+        "type": "integer"
+    },
+    {
+        "name": "trestbps",
+        "type": "string"
+    },
+    {
+        "name": "chol",
+        "type": "string"
+    },
+    {
+        "name": "fbs",
+        "type": "integer"
+    },
+    {
+        "name": "restecg",
+        "type": "integer"
+    },
+    {
+        "name": "thalach",
+        "type": "string"
+    },
+    {
+        "name": "exang",
+        "type": "integer"
+    },
+    {
+        "name": "oldpeak",
+        "type": "string"
+    },
+    {
+        "name": "slop",
+        "type": "integer"
+    },
+    {
+        "name": "ca",
+        "type": "string"
+    },
+    {
+        "name": "thal",
+        "type": "integer"
+    },
+    {
+        "name": "ifHealth",
+        "type": "integer"
+    }
+]

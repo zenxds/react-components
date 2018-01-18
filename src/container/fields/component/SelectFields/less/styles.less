@@ -1,0 +1,62 @@
+@import '~less/variables.less';
+
+.container {
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+
+  em {
+    font-style: normal;
+    color: @main-color;
+  }
+}
+
+.modal {
+  :global {
+    .ant-modal-body {
+      min-height: 200;
+      max-height: 450px;
+      overflow: auto;
+    }
+  }
+}
+
+.col-1 {
+  border: 1px solid #D9D9D9;
+  border-bottom: none;
+
+  dt, dd {
+    line-height: 30px;
+    border-bottom: 1px solid #D9D9D9;
+  }
+
+  dt {
+    position: relative;
+    padding: 0 10px;
+
+    i {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 9px;
+    }
+  }
+
+  dd {
+    padding: 0 30px;
+  }
+}
+
+.col-2 {
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  th, td {
+    padding: 0 16px;
+    line-height: 30px;
+    border: 1px solid #D9D9D9;
+  }
+}

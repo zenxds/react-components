@@ -38,6 +38,12 @@ const menuCfg = [
     title: '动态Tree',
     link: '/dtree',
     icon: ''
+  },
+
+  {
+    title: '字段选择',
+    link: '/fields',
+    icon: ''
   }
 ]
 
