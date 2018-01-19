@@ -30,7 +30,7 @@ class Page extends Component {
     return (
       <Tree loadNode={this.loadNode.bind(this)} isDir={item => {
         return true
-      }} />
+      }} indent={32} />
     )
   }
 

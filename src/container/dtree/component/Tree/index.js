@@ -41,9 +41,11 @@ export class Tree extends Component {
   render() {
     return (
       <ul className={styles.tree}>
-        { this.state.data.map(item => {
-          return this.renderNode(item, this.props)
-        }) }
+        {
+          this.state.data.map(item => {
+            return this.renderNode(item, this.props)
+          })
+        }
       </ul>
     )
   }
@@ -101,17 +103,17 @@ export class TreeNode extends Component {
   }
 
   render() {
-    const { isDir, level } = this.props
+    const { isDir, level, indent } = this.props
     const children = this.state.data.map(item => {
       return this.props.renderNode(item, this.props)
     })
     // 为了hover时标题背景变色，动态计算padding的距离
-    const indent = (level - 1) * 32
+    const paddingLeft = (level - 1) * indent
 
     return (
       <li>
         <div
-          style={{ paddingLeft: indent }}
+          style={{ paddingLeft }}
           className={styles['tree-title']}
           onClick={this.onToggle.bind(this)}
         >
@@ -121,13 +123,13 @@ export class TreeNode extends Component {
         </div>
 
         {
-          this.state.data.length ?
-          <ul className={ this.state.open ? styles.open : ''}>
-          {
-            children
-          }
-          </ul> : null
-
+          this.state.data.length ? (
+            <ul className={ this.state.open ? styles.open : ''}>
+            {
+              children
+            }
+            </ul>
+          ) : null
         }
       </li>
     )

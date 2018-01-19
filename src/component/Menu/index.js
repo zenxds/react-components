@@ -44,6 +44,12 @@ const menuCfg = [
     title: '字段选择',
     link: '/fields',
     icon: ''
+  },
+
+  {
+    title: '日期选择',
+    link: '/date',
+    icon: ''
   }
 ]
 
