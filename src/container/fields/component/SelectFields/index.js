@@ -3,7 +3,7 @@
  *
  * 穿梭框和select不满足需求，自己写一个
  */
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import CSSModules from 'react-css-modules'
 import { Modal, Row, Col, Checkbox, Icon, Radio } from 'antd'
 
@@ -175,7 +175,7 @@ class SelectFields extends Component {
                         </dt>
                         {
                           multiple ? (
-                            <Checkbox.Group value={value} onChange={this.onCheckedChange.bind(this)}>
+                            <Checkbox.Group value={value} onChange={this.onCheckedChange.bind(this)} style={{ display : 'block' }}>
                             {
                               groupMap[group].map(item => {
                                 return <dd key={item} hidden={this.state[group + 'Hidden']}><Checkbox value={item}>{ item }</Checkbox></dd>
@@ -233,16 +233,17 @@ class SelectFields extends Component {
     const { value, multiple } = this.props
 
     return (
-      <div styleName="container">
-        { value.length === 0 ? (
-          <span onClick={this.onClick.bind(this)}>请选择字段</span>
-        ) : (
-          <span onClick={this.onClick.bind(this)}>已选择<em>{ multiple ? value.length + '个': value}</em>字段</span>
-        )
-        }
-
-         { this.state.showModal ? this.getModal() : null }
-      </div>
+      <Fragment>
+        <div styleName="container" onClick={this.onClick.bind(this)}>
+          { value.length === 0 ? (
+            <span>请选择字段</span>
+          ) : (
+            <span>已选择<em>{ multiple ? value.length + '个': value}</em>字段</span>
+          )
+          }
+        </div>
+        { this.state.showModal ? this.getModal() : null }
+      </Fragment>
     )
   }
 }

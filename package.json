@@ -52,7 +52,7 @@
     "webpack-dev-server": "^2.9.7"
   },
   "dependencies": {
-    "antd": "^3.0.1",
+    "antd": "^3.1.4",
     "babel-polyfill": "^6.23.0",
     "bundle-loader": "^0.5.5",
     "d3": "^4.10.2",

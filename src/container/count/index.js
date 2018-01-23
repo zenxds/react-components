@@ -13,13 +13,16 @@ class Page extends Component {
   }
 
   componentDidMount() {
-    setInterval(() => {
+    this.timer = setInterval(() => {
       this.setState({
         value: this.randomValue()
       })
     }, 1000)
   }
 
+  componentWillUnmount() {
+    clearInterval(this.timer)
+  }
 
   randomValue() {
     return random(100, 10000)
