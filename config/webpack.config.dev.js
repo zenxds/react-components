@@ -2,6 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const dxMock = require('dx-mock')
 
 const rules = require('./webpack.rules')
 module.exports = {
@@ -110,14 +111,7 @@ module.exports = {
     host: '0.0.0.0',
     disableHostCheck: true,
     before(app){
-      app.use(function(req, res, next) {
-        const p = path.join(__dirname, '../api', /\.json$/.test(req.path) ? req.path : req.path + '.json')
-        if (fs.existsSync(p)) {
-          res.json(JSON.parse(fs.readFileSync(p, 'utf8')))
-        } else {
-          next()
-        }
-      })
+      dxMock(app, { root: path.join(__dirname, '../api') })
     }
   }
 }

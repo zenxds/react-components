@@ -34,6 +34,7 @@ class App extends Component {
                 <Dynamic exact path="/dtree" load={require('bundle-loader?lazy!./container/dtree')} />
                 <Dynamic exact path="/fields" load={require('bundle-loader?lazy!./container/fields')} />
                 <Dynamic exact path="/date" load={require('bundle-loader?lazy!./container/selectDate')} />
+                <Dynamic exact path="/table" load={require('bundle-loader?lazy!./container/table')} />
               </Switch>
             </div>
           </div>

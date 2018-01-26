@@ -1,0 +1,5095 @@
+{
+    "data": {
+        "data": [
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.6387872955278424,
+                        0.36121270447215753
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 1,
+                "chol": 231,
+                "cp": 1,
+                "trestbps": 150,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        46,
+                        1,
+                        1,
+                        150,
+                        231,
+                        0,
+                        0,
+                        147,
+                        0,
+                        1,
+                        3.6,
+                        0,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 3.6,
+                "thalach": 147,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        0.5701045342337663,
+                        -0.5701045342337663
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 46,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9955440561884048,
+                        0.004455943811595113
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 304,
+                "cp": 1,
+                "trestbps": 135,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        5,
+                        7
+                    ],
+                    "size": 13,
+                    "values": [
+                        54,
+                        1,
+                        135,
+                        304,
+                        1,
+                        170
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 170,
+                "fbs": 1,
+                "rawPrediction": {
+                    "values": [
+                        5.409050484923078,
+                        -5.409050484923078
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 54,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.7456444202613245,
+                        0.2543555797386755
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 0,
+                "chol": 232,
+                "cp": 1,
+                "trestbps": 150,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        54,
+                        1,
+                        1,
+                        150,
+                        232,
+                        0,
+                        2,
+                        165,
+                        0,
+                        0,
+                        1.6,
+                        0,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.6,
+                "thalach": 165,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        1.0755156298527497,
+                        -1.0755156298527497
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 54,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.12917788901923938,
+                        0.8708221109807607
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 188,
+                "cp": 2,
+                "trestbps": 120,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        54,
+                        1,
+                        2,
+                        120,
+                        188,
+                        0,
+                        0,
+                        113,
+                        0,
+                        1,
+                        1.4,
+                        1,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.4,
+                "thalach": 113,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -1.9082472815290732,
+                        1.9082472815290732
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 54,
+                "ca": 1,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.001260206238068166,
+                        0.9987397937619319
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 216,
+                "cp": 2,
+                "trestbps": 128,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        58,
+                        1,
+                        2,
+                        128,
+                        216,
+                        0,
+                        2,
+                        131,
+                        1,
+                        1,
+                        2.2,
+                        3,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 2.2,
+                "thalach": 131,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -6.675218889440844,
+                        6.675218889440844
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 58,
+                "ca": 3,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.006383565254781524,
+                        0.9936164347452185
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 326,
+                "cp": 2,
+                "trestbps": 170,
+                "slop": 2,
+                "features": {
+                    "values": [
+                        59,
+                        1,
+                        2,
+                        170,
+                        326,
+                        0,
+                        2,
+                        140,
+                        1,
+                        2,
+                        3.4,
+                        0,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 3.4,
+                "thalach": 140,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -5.047624493007216,
+                        5.047624493007216
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 59,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.7336593179045185,
+                        0.26634068209548145
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 1,
+                "chol": 185,
+                "cp": 1,
+                "trestbps": 140,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        60,
+                        1,
+                        1,
+                        140,
+                        185,
+                        0,
+                        2,
+                        155,
+                        0,
+                        1,
+                        3,
+                        0,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 3,
+                "thalach": 155,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        1.013268527255848,
+                        -1.013268527255848
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 60,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.0024923079309332468,
+                        0.9975076920690669
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 282,
+                "cp": 2,
+                "trestbps": 145,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        60,
+                        1,
+                        2,
+                        145,
+                        282,
+                        0,
+                        2,
+                        142,
+                        1,
+                        1,
+                        2.8,
+                        2,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 2.8,
+                "thalach": 142,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -5.992050699000158,
+                        5.992050699000158
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 60,
+                "ca": 2,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9775845711190806,
+                        0.022415428880919474
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 269,
+                "cp": 1,
+                "trestbps": 155,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        7,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        65,
+                        1,
+                        155,
+                        269,
+                        148,
+                        0.8
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0.8,
+                "thalach": 148,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        3.7753352948046954,
+                        -3.7753352948046954
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 65,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.2061752076976647,
+                        0.7938247923023353
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 254,
+                "cp": 2,
+                "trestbps": 125,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        67,
+                        1,
+                        2,
+                        125,
+                        254,
+                        1,
+                        0,
+                        163,
+                        0,
+                        1,
+                        0.2,
+                        2,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0.2,
+                "thalach": 163,
+                "fbs": 1,
+                "rawPrediction": {
+                    "values": [
+                        -1.3481364421862745,
+                        1.3481364421862745
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 67,
+                "ca": 2,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.912712532460736,
+                        0.08728746753926406
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 223,
+                "cp": 1,
+                "trestbps": 138,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        7,
+                        11
+                    ],
+                    "size": 13,
+                    "values": [
+                        52,
+                        1,
+                        1,
+                        138,
+                        223,
+                        169,
+                        1
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 169,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.3472140743334284,
+                        -2.3472140743334284
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 52,
+                "ca": 1,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.1305722426801555,
+                        0.8694277573198445
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 0,
+                "chol": 233,
+                "cp": 2,
+                "trestbps": 108,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        52,
+                        1,
+                        2,
+                        108,
+                        233,
+                        1,
+                        0,
+                        147,
+                        0,
+                        0,
+                        0.1,
+                        3,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0.1,
+                "thalach": 147,
+                "fbs": 1,
+                "rawPrediction": {
+                    "values": [
+                        -1.895908587681217,
+                        1.895908587681217
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 52,
+                "ca": 3,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.15679988859992935,
+                        0.8432001114000706
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 0,
+                "chol": 226,
+                "cp": 2,
+                "trestbps": 142,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        53,
+                        1,
+                        2,
+                        142,
+                        226,
+                        0,
+                        2,
+                        111,
+                        1,
+                        0,
+                        0,
+                        0,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0,
+                "thalach": 111,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -1.6822339124465016,
+                        1.6822339124465016
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 53,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.01999367097558782,
+                        0.9800063290244123
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 1,
+                "ifHealth": 1,
+                "chol": 184,
+                "cp": 2,
+                "trestbps": 132,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        56,
+                        1,
+                        2,
+                        132,
+                        184,
+                        0,
+                        2,
+                        105,
+                        1,
+                        1,
+                        2.1,
+                        1,
+                        1
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 2.1,
+                "thalach": 105,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -3.8921432575798107,
+                        3.8921432575798107
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 56,
+                "ca": 1,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.008324131088138453,
+                        0.9916758689118615
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 274,
+                "cp": 2,
+                "trestbps": 152,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        57,
+                        1,
+                        2,
+                        152,
+                        274,
+                        0,
+                        0,
+                        88,
+                        1,
+                        1,
+                        1.2,
+                        1,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.2,
+                "thalach": 88,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -4.780237652221551,
+                        4.780237652221551
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 57,
+                "ca": 1,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.642502801452689,
+                        0.35749719854731093
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 1,
+                "chol": 249,
+                "cp": 2,
+                "trestbps": 174,
+                "slop": 1,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        7,
+                        8,
+                        9
+                    ],
+                    "size": 13,
+                    "values": [
+                        59,
+                        2,
+                        174,
+                        249,
+                        143,
+                        1,
+                        1
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 143,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        0.5862436511254563,
+                        -0.5862436511254563
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 59,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.7566973904116057,
+                        0.2433026095883943
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 394,
+                "cp": 2,
+                "trestbps": 140,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        62,
+                        0,
+                        2,
+                        140,
+                        394,
+                        0,
+                        2,
+                        157,
+                        0,
+                        1,
+                        1.2,
+                        0,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.2,
+                "thalach": 157,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        1.1346574495141057,
+                        -1.1346574495141057
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 62,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.027244747546752705,
+                        0.9727552524532472
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 1,
+                "ifHealth": 1,
+                "chol": 212,
+                "cp": 2,
+                "trestbps": 145,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        64,
+                        1,
+                        2,
+                        145,
+                        212,
+                        0,
+                        2,
+                        132,
+                        0,
+                        1,
+                        2,
+                        2,
+                        1
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 2,
+                "thalach": 132,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -3.5752717594896275,
+                        3.5752717594896275
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 64,
+                "ca": 2,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.017730853310958725,
+                        0.9822691466890412
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 269,
+                "cp": 1,
+                "trestbps": 160,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        70,
+                        1,
+                        1,
+                        160,
+                        269,
+                        0,
+                        0,
+                        112,
+                        1,
+                        1,
+                        2.9,
+                        1,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 2.9,
+                "thalach": 112,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -4.014559103919119,
+                        4.014559103919119
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 70,
+                "ca": 1,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9592486996977958,
+                        0.040751300302204106
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 192,
+                "cp": 2,
+                "trestbps": 122,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        7
+                    ],
+                    "size": 13,
+                    "values": [
+                        35,
+                        1,
+                        2,
+                        122,
+                        192,
+                        174
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 174,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        3.1586626251513397,
+                        -3.1586626251513397
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 35,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.972917692994614,
+                        0.0270823070053861
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 157,
+                "cp": 2,
+                "trestbps": 120,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        7
+                    ],
+                    "size": 13,
+                    "values": [
+                        41,
+                        1,
+                        2,
+                        120,
+                        157,
+                        182
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 182,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        3.581418851008693,
+                        -3.581418851008693
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 41,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.12083413965279476,
+                        0.8791658603472052
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 1,
+                "ifHealth": 1,
+                "chol": 169,
+                "cp": 2,
+                "trestbps": 120,
+                "slop": 2,
+                "features": {
+                    "values": [
+                        44,
+                        1,
+                        2,
+                        120,
+                        169,
+                        0,
+                        0,
+                        144,
+                        1,
+                        2,
+                        2.8,
+                        0,
+                        1
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 2.8,
+                "thalach": 144,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -1.9845547133821704,
+                        1.9845547133821704
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 44,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.09904891550529558,
+                        0.9009510844947043
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 205,
+                "cp": 2,
+                "trestbps": 128,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        55,
+                        0,
+                        2,
+                        128,
+                        205,
+                        0,
+                        1,
+                        130,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 2,
+                "thalach": 130,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -2.207837141773183,
+                        2.207837141773183
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 55,
+                "ca": 1,
+                "restecg": 1
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9508528509521161,
+                        0.04914714904788395
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 342,
+                "cp": 2,
+                "trestbps": 132,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        7,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        55,
+                        2,
+                        132,
+                        342,
+                        166,
+                        1.2
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 1.2,
+                "thalach": 166,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.9625404799320205,
+                        -2.9625404799320205
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 55,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.26749286301462977,
+                        0.7325071369853702
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 0,
+                "chol": 220,
+                "cp": 2,
+                "trestbps": 125,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        58,
+                        1,
+                        2,
+                        125,
+                        220,
+                        0,
+                        0,
+                        144,
+                        0,
+                        1,
+                        0.4,
+                        1,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0.4,
+                "thalach": 144,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -1.0073801985074997,
+                        1.0073801985074997
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 58,
+                "ca": 1,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.49637189355719213,
+                        0.5036281064428079
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 203,
+                "cp": 2,
+                "trestbps": 148,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        61,
+                        1,
+                        2,
+                        148,
+                        203,
+                        0,
+                        0,
+                        161,
+                        0,
+                        0,
+                        0,
+                        1,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0,
+                "thalach": 161,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -0.014512680485051277,
+                        0.014512680485051277
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 61,
+                "ca": 1,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.8361277646823003,
+                        0.16387223531769968
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 1,
+                "chol": 197,
+                "cp": 2,
+                "trestbps": 124,
+                "slop": 1,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        7,
+                        8,
+                        9
+                    ],
+                    "size": 13,
+                    "values": [
+                        63,
+                        2,
+                        124,
+                        197,
+                        136,
+                        1,
+                        1
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 136,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        1.6296943587110508,
+                        -1.6296943587110508
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 63,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.005906305140864214,
+                        0.9940936948591359
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 187,
+                "cp": 2,
+                "trestbps": 140,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        63,
+                        1,
+                        2,
+                        140,
+                        187,
+                        0,
+                        2,
+                        144,
+                        1,
+                        0,
+                        4,
+                        2,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 4,
+                "thalach": 144,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -5.125811014400332,
+                        5.125811014400332
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 63,
+                "ca": 2,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.8727704140328942,
+                        0.12722958596710568
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 0,
+                "chol": 199,
+                "cp": 0,
+                "trestbps": 140,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        40,
+                        1,
+                        0,
+                        140,
+                        199,
+                        0,
+                        0,
+                        178,
+                        1,
+                        0,
+                        1.4,
+                        0,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.4,
+                "thalach": 178,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        1.9256793182405922,
+                        -1.9256793182405922
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 40,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9408030247574322,
+                        0.05919697524256775
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 226,
+                "cp": 2,
+                "trestbps": 140,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        7
+                    ],
+                    "size": 13,
+                    "values": [
+                        42,
+                        1,
+                        2,
+                        140,
+                        226,
+                        178
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 178,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.7658633455209234,
+                        -2.7658633455209234
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 42,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.06235865872444776,
+                        0.9376413412755523
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 177,
+                "cp": 2,
+                "trestbps": 120,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        43,
+                        1,
+                        2,
+                        120,
+                        177,
+                        0,
+                        2,
+                        120,
+                        1,
+                        1,
+                        2.5,
+                        0,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 2.5,
+                "thalach": 120,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -2.710464975137878,
+                        2.710464975137878
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 43,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.9203278924110494,
+                        0.0796721075889506
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 233,
+                "cp": 1,
+                "trestbps": 130,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        44,
+                        1,
+                        1,
+                        130,
+                        233,
+                        0,
+                        0,
+                        179,
+                        1,
+                        0,
+                        0.4,
+                        0,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0.4,
+                "thalach": 179,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.4468104543136597,
+                        -2.4468104543136597
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 44,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.0211184960050735,
+                        0.9788815039949266
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 353,
+                "cp": 2,
+                "trestbps": 132,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        55,
+                        1,
+                        2,
+                        132,
+                        353,
+                        0,
+                        0,
+                        132,
+                        1,
+                        1,
+                        1.2,
+                        1,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.2,
+                "thalach": 132,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -3.836261352984611,
+                        3.836261352984611
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 55,
+                "ca": 1,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.02026824078202412,
+                        0.9797317592179758
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 1,
+                "ifHealth": 1,
+                "chol": 276,
+                "cp": 2,
+                "trestbps": 150,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        57,
+                        1,
+                        2,
+                        150,
+                        276,
+                        0,
+                        2,
+                        112,
+                        1,
+                        1,
+                        0.6,
+                        1,
+                        1
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0.6,
+                "thalach": 112,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -3.878223651660605,
+                        3.878223651660605
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 57,
+                "ca": 1,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.6797180148840946,
+                        0.32028198511590544
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 243,
+                "cp": 1,
+                "trestbps": 150,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        61,
+                        1,
+                        1,
+                        150,
+                        243,
+                        1,
+                        0,
+                        137,
+                        1,
+                        1,
+                        1,
+                        0,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1,
+                "thalach": 137,
+                "fbs": 1,
+                "rawPrediction": {
+                    "values": [
+                        0.7524762169218651,
+                        -0.7524762169218651
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 61,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.015171980354307637,
+                        0.9848280196456923
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 225,
+                "cp": 2,
+                "trestbps": 150,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        65,
+                        0,
+                        2,
+                        150,
+                        225,
+                        0,
+                        2,
+                        114,
+                        0,
+                        1,
+                        1,
+                        3,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1,
+                "thalach": 114,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -4.173016697622598,
+                        4.173016697622598
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 65,
+                "ca": 3,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.5694251451987449,
+                        0.4305748548012551
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 302,
+                "cp": 2,
+                "trestbps": 160,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        7,
+                        10,
+                        11
+                    ],
+                    "size": 13,
+                    "values": [
+                        71,
+                        2,
+                        160,
+                        302,
+                        162,
+                        0.4,
+                        2
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0.4,
+                "thalach": 162,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        0.2795061472365745,
+                        -0.2795061472365745
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 71,
+                "ca": 2,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.08314922227044864,
+                        0.9168507777295514
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 167,
+                "cp": 2,
+                "trestbps": 110,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        40,
+                        1,
+                        2,
+                        110,
+                        167,
+                        0,
+                        2,
+                        114,
+                        1,
+                        1,
+                        2,
+                        0,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 2,
+                "thalach": 114,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -2.400307877994152,
+                        2.400307877994152
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 40,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9769766468317655,
+                        0.02302335316823441
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 219,
+                "cp": 1,
+                "trestbps": 120,
+                "slop": 1,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        7,
+                        9,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        50,
+                        1,
+                        120,
+                        219,
+                        158,
+                        1,
+                        1.6
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 1.6,
+                "thalach": 158,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        3.747953692875941,
+                        -3.747953692875941
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 50,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9927426011903365,
+                        0.0072573988096635055
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 340,
+                "cp": 1,
+                "trestbps": 120,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        7
+                    ],
+                    "size": 13,
+                    "values": [
+                        58,
+                        1,
+                        120,
+                        340,
+                        172
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 172,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        4.918449943185509,
+                        -4.918449943185509
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 58,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.6060512672425882,
+                        0.3939487327574118
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 0,
+                "chol": 234,
+                "cp": 2,
+                "trestbps": 135,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        59,
+                        1,
+                        2,
+                        135,
+                        234,
+                        0,
+                        0,
+                        161,
+                        0,
+                        1,
+                        0.5,
+                        0,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0.5,
+                "thalach": 161,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        0.43074380097463916,
+                        -0.43074380097463916
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 59,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.08998102032949182,
+                        0.9100189796705083
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 230,
+                "cp": 2,
+                "trestbps": 117,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        60,
+                        1,
+                        2,
+                        117,
+                        230,
+                        1,
+                        0,
+                        160,
+                        1,
+                        0,
+                        1.4,
+                        2,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.4,
+                "thalach": 160,
+                "fbs": 1,
+                "rawPrediction": {
+                    "values": [
+                        -2.313866693211194,
+                        2.313866693211194
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 60,
+                "ca": 2,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.0046383381123727765,
+                        0.9953616618876272
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 206,
+                "cp": 2,
+                "trestbps": 130,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        60,
+                        1,
+                        2,
+                        130,
+                        206,
+                        0,
+                        2,
+                        132,
+                        1,
+                        1,
+                        2.4,
+                        2,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 2.4,
+                "thalach": 132,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -5.368750013755346,
+                        5.368750013755346
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 60,
+                "ca": 2,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9460679641107728,
+                        0.0539320358892273
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 1,
+                "chol": 335,
+                "cp": 1,
+                "trestbps": 140,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        7
+                    ],
+                    "size": 13,
+                    "values": [
+                        64,
+                        1,
+                        1,
+                        140,
+                        335,
+                        158
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 158,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.864589750915233,
+                        -2.864589750915233
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 64,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.8882014577751157,
+                        0.1117985422248843
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 226,
+                "cp": 0,
+                "trestbps": 150,
+                "slop": 2,
+                "features": {
+                    "indices": [
+                        0,
+                        3,
+                        4,
+                        7,
+                        9,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        66,
+                        150,
+                        226,
+                        114,
+                        2,
+                        2.6
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 2.6,
+                "thalach": 114,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.072500062623069,
+                        -2.072500062623069
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 66,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9944282351079784,
+                        0.005571764892021638
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 141,
+                "cp": 1,
+                "trestbps": 108,
+                "slop": 1,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        7,
+                        9,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        44,
+                        1,
+                        108,
+                        141,
+                        175,
+                        1,
+                        0.6
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0.6,
+                "thalach": 175,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        5.18445607342134,
+                        -5.18445607342134
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 44,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9448975540307825,
+                        0.05510244596921747
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 222,
+                "cp": 2,
+                "trestbps": 122,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        6,
+                        7
+                    ],
+                    "size": 13,
+                    "values": [
+                        48,
+                        1,
+                        2,
+                        122,
+                        222,
+                        2,
+                        186
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 186,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.8418824065546398,
+                        -2.8418824065546398
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 48,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.7076775988516041,
+                        0.29232240114839597
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 201,
+                "cp": 2,
+                "trestbps": 134,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        52,
+                        1,
+                        2,
+                        134,
+                        201,
+                        0,
+                        0,
+                        158,
+                        0,
+                        0,
+                        0.8,
+                        1,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0.8,
+                "thalach": 158,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        0.8841313144230281,
+                        -0.8841313144230281
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 52,
+                "ca": 1,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.044296535334563916,
+                        0.9557034646654362
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 239,
+                "cp": 2,
+                "trestbps": 110,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        59,
+                        1,
+                        2,
+                        110,
+                        239,
+                        0,
+                        2,
+                        142,
+                        1,
+                        1,
+                        1.2,
+                        1,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.2,
+                "thalach": 142,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -3.0715412166896847,
+                        3.0715412166896847
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 59,
+                "ca": 1,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.06033049942278591,
+                        0.9396695005772142
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 258,
+                "cp": 2,
+                "trestbps": 150,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        60,
+                        0,
+                        2,
+                        150,
+                        258,
+                        0,
+                        2,
+                        157,
+                        0,
+                        1,
+                        2.6,
+                        2,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 2.6,
+                "thalach": 157,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -2.7456904477078687,
+                        2.7456904477078687
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 60,
+                "ca": 2,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.001666829274758245,
+                        0.9983331707252417
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 164,
+                "cp": 2,
+                "trestbps": 160,
+                "slop": 2,
+                "features": {
+                    "values": [
+                        62,
+                        0,
+                        2,
+                        160,
+                        164,
+                        0,
+                        2,
+                        145,
+                        0,
+                        2,
+                        6.2,
+                        3,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 6.2,
+                "thalach": 145,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -6.395163875140073,
+                        6.395163875140073
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 62,
+                "ca": 3,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.03331888215025463,
+                        0.9666811178497454
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 0,
+                "chol": 231,
+                "cp": 1,
+                "trestbps": 130,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        62,
+                        1,
+                        1,
+                        130,
+                        231,
+                        0,
+                        0,
+                        146,
+                        0,
+                        1,
+                        1.8,
+                        3,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.8,
+                "thalach": 146,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -3.367744408870511,
+                        3.367744408870511
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 62,
+                "ca": 3,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9904875551558693,
+                        0.009512444844130712
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 252,
+                "cp": 1,
+                "trestbps": 135,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        6,
+                        7
+                    ],
+                    "size": 13,
+                    "values": [
+                        63,
+                        1,
+                        135,
+                        252,
+                        2,
+                        172
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 172,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        4.645596376936311,
+                        -4.645596376936311
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 63,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9658374032311623,
+                        0.034162596768837684
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 235,
+                "cp": 1,
+                "trestbps": 140,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        6,
+                        7
+                    ],
+                    "size": 13,
+                    "values": [
+                        44,
+                        1,
+                        1,
+                        140,
+                        235,
+                        2,
+                        180
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 180,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        3.3418641165544223,
+                        -3.3418641165544223
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 44,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9386934549268916,
+                        0.06130654507310841
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 257,
+                "cp": 1,
+                "trestbps": 138,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        6,
+                        7
+                    ],
+                    "size": 13,
+                    "values": [
+                        47,
+                        1,
+                        1,
+                        138,
+                        257,
+                        2,
+                        156
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 156,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.728602358413256,
+                        -2.728602358413256
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 47,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9807522477655939,
+                        0.019247752234406147
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 256,
+                "cp": 1,
+                "trestbps": 130,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        6,
+                        7,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        51,
+                        1,
+                        130,
+                        256,
+                        2,
+                        149,
+                        0.5
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0.5,
+                "thalach": 149,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        3.930925590099249,
+                        -3.930925590099249
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 51,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9185595381206247,
+                        0.08144046187937522
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 325,
+                "cp": 2,
+                "trestbps": 120,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        7,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        52,
+                        1,
+                        2,
+                        120,
+                        325,
+                        172,
+                        0.2
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0.2,
+                "thalach": 172,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.422934499396366,
+                        -2.422934499396366
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 52,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9742588243100512,
+                        0.025741175689948947
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 216,
+                "cp": 1,
+                "trestbps": 128,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        6,
+                        7
+                    ],
+                    "size": 13,
+                    "values": [
+                        53,
+                        1,
+                        128,
+                        216,
+                        2,
+                        115
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 115,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        3.633585124994476,
+                        -3.633585124994476
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 53,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.8812660985014519,
+                        0.11873390149854812
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 264,
+                "cp": 2,
+                "trestbps": 130,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        53,
+                        0,
+                        2,
+                        130,
+                        264,
+                        0,
+                        2,
+                        143,
+                        0,
+                        1,
+                        0.4,
+                        0,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0.4,
+                "thalach": 143,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.0044747543659005,
+                        -2.0044747543659005
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 53,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9654369805580444,
+                        0.0345630194419555
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 234,
+                "cp": 2,
+                "trestbps": 138,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        6,
+                        7
+                    ],
+                    "size": 13,
+                    "values": [
+                        53,
+                        2,
+                        138,
+                        234,
+                        2,
+                        160
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 160,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        3.329796520204813,
+                        -3.329796520204813
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 53,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.6896278802424768,
+                        0.31037211975752327
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 302,
+                "cp": 2,
+                "trestbps": 120,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        66,
+                        1,
+                        2,
+                        120,
+                        302,
+                        0,
+                        2,
+                        151,
+                        0,
+                        1,
+                        0.4,
+                        0,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0.4,
+                "thalach": 151,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        0.7983801842120188,
+                        -0.7983801842120188
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 66,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.1872696131822678,
+                        0.8127303868177321
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 274,
+                "cp": 1,
+                "trestbps": 180,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        68,
+                        1,
+                        1,
+                        180,
+                        274,
+                        1,
+                        2,
+                        150,
+                        1,
+                        1,
+                        1.6,
+                        0,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.6,
+                "thalach": 150,
+                "fbs": 1,
+                "rawPrediction": {
+                    "values": [
+                        -1.467850066808153,
+                        1.467850066808153
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 68,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9905270893296746,
+                        0.009472910670325446
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 210,
+                "cp": 2,
+                "trestbps": 118,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        7,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        34,
+                        2,
+                        118,
+                        210,
+                        192,
+                        0.7
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0.7,
+                "thalach": 192,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        4.649800997986731,
+                        -4.649800997986731
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 34,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9290717720344333,
+                        0.07092822796556683
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 204,
+                "cp": 2,
+                "trestbps": 112,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        7,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        47,
+                        1,
+                        2,
+                        112,
+                        204,
+                        143,
+                        0.1
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0.1,
+                "thalach": 143,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.5725175010931145,
+                        -2.5725175010931145
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 47,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9823442224233746,
+                        0.017655777576625346
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 196,
+                "cp": 1,
+                "trestbps": 136,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        52,
+                        0,
+                        1,
+                        136,
+                        196,
+                        0,
+                        2,
+                        169,
+                        0,
+                        1,
+                        0.1,
+                        0,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0.1,
+                "thalach": 169,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        4.018878707665198,
+                        -4.018878707665198
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 52,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.11188202813983093,
+                        0.888117971860169
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 1,
+                "chol": 206,
+                "cp": 2,
+                "trestbps": 110,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        54,
+                        1,
+                        2,
+                        110,
+                        206,
+                        0,
+                        2,
+                        108,
+                        1,
+                        1,
+                        0,
+                        1,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0,
+                "thalach": 108,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -2.0716595893786582,
+                        2.0716595893786582
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 54,
+                "ca": 1,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.004992351854635265,
+                        0.9950076481453647
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 1,
+                "chol": 286,
+                "cp": 2,
+                "trestbps": 122,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        54,
+                        1,
+                        2,
+                        122,
+                        286,
+                        0,
+                        2,
+                        116,
+                        1,
+                        1,
+                        3.2,
+                        2,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 3.2,
+                "thalach": 116,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -5.294843311423065,
+                        5.294843311423065
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 54,
+                "ca": 2,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.02909173824625786,
+                        0.970908261753742
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 283,
+                "cp": 2,
+                "trestbps": 130,
+                "slop": 2,
+                "features": {
+                    "values": [
+                        56,
+                        1,
+                        2,
+                        130,
+                        283,
+                        1,
+                        2,
+                        103,
+                        1,
+                        2,
+                        1.6,
+                        0,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.6,
+                "thalach": 103,
+                "fbs": 1,
+                "rawPrediction": {
+                    "values": [
+                        -3.5077777609121608,
+                        3.5077777609121608
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 56,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.3003129768509894,
+                        0.6996870231490105
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 1,
+                "chol": 212,
+                "cp": 2,
+                "trestbps": 112,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        66,
+                        1,
+                        2,
+                        112,
+                        212,
+                        0,
+                        2,
+                        132,
+                        1,
+                        0,
+                        0.1,
+                        1,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0.1,
+                "thalach": 132,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -0.8458079382602532,
+                        0.8458079382602532
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 66,
+                "ca": 1,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9659319562680548,
+                        0.03406804373194508
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 277,
+                "cp": 1,
+                "trestbps": 152,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        7,
+                        11
+                    ],
+                    "size": 13,
+                    "values": [
+                        67,
+                        1,
+                        152,
+                        277,
+                        172,
+                        1
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 172,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        3.3447335821413375,
+                        -3.3447335821413375
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 67,
+                "ca": 1,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9368637082962153,
+                        0.06313629170378468
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 0,
+                "chol": 197,
+                "cp": 2,
+                "trestbps": 101,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        46,
+                        1,
+                        2,
+                        101,
+                        197,
+                        1,
+                        0,
+                        156,
+                        0,
+                        0,
+                        0,
+                        0,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0,
+                "thalach": 156,
+                "fbs": 1,
+                "rawPrediction": {
+                    "values": [
+                        2.6972420661907064,
+                        -2.6972420661907064
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 46,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.8634689932325487,
+                        0.13653100676745136
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 255,
+                "cp": 1,
+                "trestbps": 124,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        48,
+                        1,
+                        1,
+                        124,
+                        255,
+                        1,
+                        0,
+                        175,
+                        0,
+                        0,
+                        0,
+                        2,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0,
+                "thalach": 175,
+                "fbs": 1,
+                "rawPrediction": {
+                    "values": [
+                        1.8444062440649107,
+                        -1.8444062440649107
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 48,
+                "ca": 2,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.19541265288537987,
+                        0.8045873471146202
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 1,
+                "chol": 149,
+                "cp": 1,
+                "trestbps": 118,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        49,
+                        1,
+                        1,
+                        118,
+                        149,
+                        0,
+                        2,
+                        126,
+                        0,
+                        0,
+                        0.8,
+                        3,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0.8,
+                "thalach": 126,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -1.4152160424322897,
+                        1.4152160424322897
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 49,
+                "ca": 3,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9814988712485643,
+                        0.018501128751435784
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 214,
+                "cp": 1,
+                "trestbps": 110,
+                "slop": 1,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        7,
+                        9,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        54,
+                        1,
+                        110,
+                        214,
+                        158,
+                        1,
+                        1.6
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 1.6,
+                "thalach": 158,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        3.9712491198747712,
+                        -3.9712491198747712
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 54,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.966014880749612,
+                        0.033985119250387996
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 201,
+                "cp": 1,
+                "trestbps": 160,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        7,
+                        11
+                    ],
+                    "size": 13,
+                    "values": [
+                        54,
+                        1,
+                        160,
+                        201,
+                        163,
+                        1
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 163,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        3.347256478891726,
+                        -3.347256478891726
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 54,
+                "ca": 1,
+                "restecg": 0
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.5952890790863801,
+                        0.40471092091362
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 0,
+                "chol": 207,
+                "cp": 2,
+                "trestbps": 132,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        57,
+                        1,
+                        2,
+                        132,
+                        207,
+                        0,
+                        0,
+                        168,
+                        1,
+                        0,
+                        0,
+                        0,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0,
+                "thalach": 168,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        0.38587409803850736,
+                        -0.38587409803850736
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 57,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.8713469113922162,
+                        0.12865308860778382
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 248,
+                "cp": 2,
+                "trestbps": 100,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        58,
+                        0,
+                        2,
+                        100,
+                        248,
+                        0,
+                        2,
+                        122,
+                        0,
+                        1,
+                        1,
+                        0,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1,
+                "thalach": 122,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        1.9129206422036562,
+                        -1.9129206422036562
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 58,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.029264251347490312,
+                        0.9707357486525096
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 1,
+                "chol": 304,
+                "cp": 2,
+                "trestbps": 125,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        77,
+                        1,
+                        2,
+                        125,
+                        304,
+                        0,
+                        2,
+                        162,
+                        1,
+                        0,
+                        0,
+                        3,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0,
+                "thalach": 162,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -3.5016876071670424,
+                        3.5016876071670424
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 77,
+                "ca": 3,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.7323108860677574,
+                        0.26768911393224265
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 250,
+                "cp": 1,
+                "trestbps": 130,
+                "slop": 2,
+                "features": {
+                    "values": [
+                        37,
+                        1,
+                        1,
+                        130,
+                        250,
+                        0,
+                        0,
+                        187,
+                        0,
+                        2,
+                        3.5,
+                        0,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 3.5,
+                "thalach": 187,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        1.0063788470184187,
+                        -1.0063788470184187
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 37,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9624884679838709,
+                        0.03751153201612906
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 204,
+                "cp": 2,
+                "trestbps": 130,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        6,
+                        7,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        41,
+                        2,
+                        130,
+                        204,
+                        2,
+                        172,
+                        1.4
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 1.4,
+                "thalach": 172,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        3.2448736786429464,
+                        -3.2448736786429464
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 41,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.05925827900969717,
+                        0.940741720990303
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 203,
+                "cp": 2,
+                "trestbps": 140,
+                "slop": 2,
+                "features": {
+                    "values": [
+                        53,
+                        1,
+                        2,
+                        140,
+                        203,
+                        1,
+                        2,
+                        155,
+                        1,
+                        2,
+                        3.1,
+                        0,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 3.1,
+                "thalach": 155,
+                "fbs": 1,
+                "rawPrediction": {
+                    "values": [
+                        -2.7647631286239545,
+                        2.7647631286239545
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 53,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9412793704648353,
+                        0.0587206295351646
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 236,
+                "cp": 2,
+                "trestbps": 120,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        7,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        56,
+                        1,
+                        2,
+                        120,
+                        236,
+                        178,
+                        0.8
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0.8,
+                "thalach": 178,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.774448877092888,
+                        -2.774448877092888
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 56,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.7801081159217337,
+                        0.21989188407826635
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 1,
+                "ifHealth": 0,
+                "chol": 233,
+                "cp": 0,
+                "trestbps": 145,
+                "slop": 2,
+                "features": {
+                    "values": [
+                        63,
+                        1,
+                        0,
+                        145,
+                        233,
+                        1,
+                        2,
+                        150,
+                        0,
+                        2,
+                        2.3,
+                        0,
+                        1
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 2.3,
+                "thalach": 150,
+                "fbs": 1,
+                "rawPrediction": {
+                    "values": [
+                        1.2662965306839764,
+                        -1.2662965306839764
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 63,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.004327213570662613,
+                        0.9956727864293374
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 229,
+                "cp": 2,
+                "trestbps": 120,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        67,
+                        1,
+                        2,
+                        120,
+                        229,
+                        0,
+                        2,
+                        129,
+                        1,
+                        1,
+                        2.6,
+                        2,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 2.6,
+                "thalach": 129,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -5.438494858225804,
+                        5.438494858225804
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 67,
+                "ca": 2,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.0011998043315383181,
+                        0.9988001956684618
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 1,
+                "chol": 286,
+                "cp": 2,
+                "trestbps": 160,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        67,
+                        1,
+                        2,
+                        160,
+                        286,
+                        0,
+                        2,
+                        108,
+                        1,
+                        1,
+                        1.5,
+                        3,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.5,
+                "thalach": 108,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -6.724396267861838,
+                        6.724396267861838
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 67,
+                "ca": 3,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.8514849512401599,
+                        0.14851504875984006
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 0,
+                "chol": 263,
+                "cp": 2,
+                "trestbps": 120,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        7,
+                        12
+                    ],
+                    "size": 13,
+                    "values": [
+                        44,
+                        1,
+                        2,
+                        120,
+                        263,
+                        173,
+                        2
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0,
+                "thalach": 173,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        1.7462955351528286,
+                        -1.7462955351528286
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 44,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9120662380722544,
+                        0.0879337619277456
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 266,
+                "cp": 2,
+                "trestbps": 130,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        7,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        49,
+                        1,
+                        2,
+                        130,
+                        266,
+                        171,
+                        0.6
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0.6,
+                "thalach": 171,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.3391287912153684,
+                        -2.3391287912153684
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 49,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.8180567837779342,
+                        0.18194321622206575
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 294,
+                "cp": 2,
+                "trestbps": 140,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        56,
+                        0,
+                        2,
+                        140,
+                        294,
+                        0,
+                        2,
+                        153,
+                        0,
+                        1,
+                        1.3,
+                        0,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.3,
+                "thalach": 153,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        1.5032371123996855,
+                        -1.5032371123996855
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 56,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.26008137683884436,
+                        0.7399186231611556
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 1,
+                "ifHealth": 1,
+                "chol": 256,
+                "cp": 1,
+                "trestbps": 130,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        56,
+                        1,
+                        1,
+                        130,
+                        256,
+                        1,
+                        2,
+                        142,
+                        1,
+                        1,
+                        0.6,
+                        1,
+                        1
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0.6,
+                "thalach": 142,
+                "fbs": 1,
+                "rawPrediction": {
+                    "values": [
+                        -1.0455456415633133,
+                        1.0455456415633133
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 56,
+                "ca": 1,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9945415955183334,
+                        0.0054584044816665764
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 283,
+                "cp": 0,
+                "trestbps": 150,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        58,
+                        150,
+                        283,
+                        1,
+                        2,
+                        162,
+                        1
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 1,
+                "thalach": 162,
+                "fbs": 1,
+                "rawPrediction": {
+                    "values": [
+                        5.205125395400873,
+                        -5.205125395400873
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 58,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.1462634309216745,
+                        0.8537365690783255
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 224,
+                "cp": 1,
+                "trestbps": 132,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        58,
+                        1,
+                        1,
+                        132,
+                        224,
+                        0,
+                        2,
+                        173,
+                        0,
+                        0,
+                        3.2,
+                        2,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 3.2,
+                "thalach": 173,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -1.7642133618241687,
+                        1.7642133618241687
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 58,
+                "ca": 2,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.6105944142123699,
+                        0.38940558578763
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 1,
+                "chol": 284,
+                "cp": 2,
+                "trestbps": 120,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        58,
+                        1,
+                        2,
+                        120,
+                        284,
+                        0,
+                        2,
+                        160,
+                        0,
+                        1,
+                        1.8,
+                        0,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.8,
+                "thalach": 160,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        0.4498114947918772,
+                        -0.4498114947918772
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 58,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 1,
+                "probability": {
+                    "values": [
+                        0.02025908975755613,
+                        0.9797409102424439
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 335,
+                "cp": 2,
+                "trestbps": 110,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        57,
+                        1,
+                        2,
+                        110,
+                        335,
+                        0,
+                        0,
+                        143,
+                        1,
+                        1,
+                        3,
+                        1,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 3,
+                "thalach": 143,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -3.8786845896533535,
+                        3.8786845896533535
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 57,
+                "ca": 1,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.5952529636452972,
+                        0.4047470363547027
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 1,
+                "chol": 232,
+                "cp": 2,
+                "trestbps": 154,
+                "slop": 0,
+                "features": {
+                    "values": [
+                        57,
+                        1,
+                        2,
+                        154,
+                        232,
+                        0,
+                        2,
+                        164,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0,
+                "thalach": 164,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        0.3857241938107263,
+                        -0.3857241938107263
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 57,
+                "ca": 1,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.9234036039700151,
+                        0.07659639602998482
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 197,
+                "cp": 2,
+                "trestbps": 130,
+                "slop": 1,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        7,
+                        9,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        58,
+                        2,
+                        130,
+                        197,
+                        131,
+                        1,
+                        0.6
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0.6,
+                "thalach": 131,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.4895163865773067,
+                        -2.4895163865773067
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 58,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.8494246639278807,
+                        0.15057533607211926
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 0,
+                "ifHealth": 1,
+                "chol": 204,
+                "cp": 0,
+                "trestbps": 134,
+                "slop": 0,
+                "features": {
+                    "indices": [
+                        0,
+                        1,
+                        3,
+                        4,
+                        7,
+                        10,
+                        11
+                    ],
+                    "size": 13,
+                    "values": [
+                        59,
+                        1,
+                        134,
+                        204,
+                        162,
+                        0.8,
+                        2
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 0.8,
+                "thalach": 162,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        1.7300957234875973,
+                        -1.7300957234875973
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 59,
+                "ca": 2,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.7828275504447811,
+                        0.2171724495552188
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 0,
+                "chol": 227,
+                "cp": 0,
+                "trestbps": 170,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        64,
+                        1,
+                        0,
+                        170,
+                        227,
+                        0,
+                        2,
+                        155,
+                        0,
+                        1,
+                        0.6,
+                        0,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0.6,
+                "thalach": 155,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        1.2822206932995304,
+                        -1.2822206932995304
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 64,
+                "ca": 0,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.8536030372152241,
+                        0.14639696278477587
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 278,
+                "cp": 1,
+                "trestbps": 146,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        66,
+                        0,
+                        1,
+                        146,
+                        278,
+                        0,
+                        2,
+                        152,
+                        0,
+                        1,
+                        0,
+                        1,
+                        0
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 0,
+                "thalach": 152,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        1.7631444027995098,
+                        -1.7631444027995098
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 66,
+                "ca": 1,
+                "restecg": 2
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.926728962387682,
+                        0.0732710376123179
+                    ],
+                    "type": 1
+                },
+                "sex": 0,
+                "thal": 0,
+                "ifHealth": 0,
+                "chol": 149,
+                "cp": 2,
+                "trestbps": 112,
+                "slop": 1,
+                "features": {
+                    "indices": [
+                        0,
+                        2,
+                        3,
+                        4,
+                        7,
+                        9,
+                        10
+                    ],
+                    "size": 13,
+                    "values": [
+                        71,
+                        2,
+                        112,
+                        149,
+                        125,
+                        1,
+                        1.6
+                    ],
+                    "type": 0
+                },
+                "oldpeak": 1.6,
+                "thalach": 125,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        2.5374957317943947,
+                        -2.5374957317943947
+                    ],
+                    "type": 1
+                },
+                "prediction": 0,
+                "age": 71,
+                "ca": 0,
+                "restecg": 0
+            },
+            {
+                "exang": 0,
+                "probability": {
+                    "values": [
+                        0.49114131523868304,
+                        0.508858684761317
+                    ],
+                    "type": 1
+                },
+                "sex": 1,
+                "thal": 2,
+                "ifHealth": 1,
+                "chol": 219,
+                "cp": 2,
+                "trestbps": 118,
+                "slop": 1,
+                "features": {
+                    "values": [
+                        39,
+                        1,
+                        2,
+                        118,
+                        219,
+                        0,
+                        0,
+                        140,
+                        0,
+                        1,
+                        1.2,
+                        0,
+                        2
+                    ],
+                    "type": 1
+                },
+                "oldpeak": 1.2,
+                "thalach": 140,
+                "fbs": 0,
+                "rawPrediction": {
+                    "values": [
+                        -0.035438447459826605,
+                        0.035438447459826605
+                    ],
+                    "type": 1
+                },
+                "prediction": 1,
+                "age": 39,
+                "ca": 0,
+                "restecg": 0
+            }
+        ],
+        "schema": {
+            "fields": [
+                {
+                    "name": "age",
+                    "type": "double"
+                },
+                {
+                    "name": "sex",
+                    "type": "double"
+                },
+                {
+                    "name": "cp",
+                    "type": "double"
+                },
+                {
+                    "name": "trestbps",
+                    "type": "double"
+                },
+                {
+                    "name": "chol",
+                    "type": "double"
+                },
+                {
+                    "name": "fbs",
+                    "type": "double"
+                },
+                {
+                    "name": "restecg",
+                    "type": "double"
+                },
+                {
+                    "name": "thalach",
+                    "type": "double"
+                },
+                {
+                    "name": "exang",
+                    "type": "double"
+                },
+                {
+                    "name": "oldpeak",
+                    "type": "double"
+                },
+                {
+                    "name": "slop",
+                    "type": "double"
+                },
+                {
+                    "name": "ca",
+                    "type": "double"
+                },
+                {
+                    "name": "thal",
+                    "type": "double"
+                },
+                {
+                    "name": "ifHealth",
+                    "type": "integer"
+                },
+                {
+                    "name": "features",
+                    "type": "vector"
+                },
+                {
+                    "name": "rawPrediction",
+                    "type": "vector"
+                },
+                {
+                    "name": "probability",
+                    "type": "vector"
+                },
+                {
+                    "name": "prediction",
+                    "type": "double"
+                }
+            ]
+        }
+    },
+    "success": true
+}

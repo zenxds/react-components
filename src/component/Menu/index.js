@@ -50,6 +50,12 @@ const menuCfg = [
     title: '日期选择',
     link: '/date',
     icon: ''
+  },
+
+  {
+    title: 'Table',
+    link: '/table',
+    icon: ''
   }
 ]
 

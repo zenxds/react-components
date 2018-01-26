@@ -2357,6 +2357,10 @@ duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.npmjs.org/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
 
+dx-mock@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/dx-mock/-/dx-mock-0.1.0.tgz#abb4078730f2cb5c72d870eb988da4150dd1475c"
+
 ecc-jsbn@~0.1.1:
   version "0.1.1"
   resolved "https://registry.npmjs.org/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz#0fc73a9ed5f0d53c38193398523ef7e543777505"
