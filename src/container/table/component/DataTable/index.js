@@ -88,8 +88,7 @@ class DataTable extends Component {
       if (this.colWidth[item.dataIndex]) {
         item.width = this.colWidth[item.dataIndex]
       } else if (!item.width) {
-        // getTextWidth获取到的宽度不一定是实际渲染的宽度，再补上5作为预留
-        item.width = index === columns.length - 1 ? 'auto' : getTextWidth(item.title) + 5 + (headerPadding || 0) * 2 + (item.sorter ? 20 : 0)
+        item.width = index === columns.length - 1 ? 'auto' : getTextWidth(item.title) + (headerPadding || 5) * 2 + (item.sorter ? 20 : 0)
       }
 
       this.colWidth[item.dataIndex] = item.width
