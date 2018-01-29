@@ -33,7 +33,7 @@ class DataTable extends Component {
     // 定位resizer
     const pin = event => {
       const left = event.pageX - this.$header.getBoundingClientRect().left
-      resizer.style.left = left + 'px'
+      resizer.style.left = (left + this.$header.scrollLeft) + 'px'
     }
 
     const move = event => {
@@ -80,6 +80,13 @@ class DataTable extends Component {
     }
   }
 
+  onScroll(event) {
+    const left = event.target.scrollLeft
+
+    this.$header.scrollLeft = left
+    this.$body.scrollLeft = left
+  }
+
   render() {
     const { columns, dataSource, rowKey, headerPadding } = this.props
     let data = dataSource.slice()
@@ -102,13 +109,11 @@ class DataTable extends Component {
       }
     })
 
-
-
     return (
       <div styleName="table">
         <div styleName="table-header" ref={elem => {
           this.$header = elem
-        }}>
+        }} onScroll={this.onScroll.bind(this)}>
           <table>
             <colgroup>
               {
@@ -154,7 +159,9 @@ class DataTable extends Component {
           }} />
         </div>
 
-        <div styleName="table-body" className="ui-table-body">
+        <div styleName="table-body" className="ui-table-body" ref={elem => {
+          this.$body = elem
+        }} onScroll={this.onScroll.bind(this)}>
           <table>
             <colgroup>
               {
