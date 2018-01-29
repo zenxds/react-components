@@ -64,6 +64,16 @@ class DataTable extends Component {
     document.addEventListener('mouseup', up, false)
   }
 
+  onHeaderScroll() {
+
+  }
+
+  onBodyScroll(event) {
+    const left = event.target.scrollLeft
+
+    this.$header.scrollLeft = left
+  }
+
   toggleSort(type, column) {
     const { sortColumn, sortType } = this.state
 
@@ -78,13 +88,6 @@ class DataTable extends Component {
         sortType: type
       })
     }
-  }
-
-  onScroll(event) {
-    const left = event.target.scrollLeft
-
-    this.$header.scrollLeft = left
-    this.$body.scrollLeft = left
   }
 
   render() {
@@ -113,7 +116,7 @@ class DataTable extends Component {
       <div styleName="table">
         <div styleName="table-header" ref={elem => {
           this.$header = elem
-        }} onScroll={this.onScroll.bind(this)}>
+        }} onScroll={this.onHeaderScroll.bind(this)}>
           <table>
             <colgroup>
               {
@@ -161,7 +164,7 @@ class DataTable extends Component {
 
         <div styleName="table-body" className="ui-table-body" ref={elem => {
           this.$body = elem
-        }} onScroll={this.onScroll.bind(this)}>
+        }} onScroll={this.onBodyScroll.bind(this)}>
           <table>
             <colgroup>
               {
