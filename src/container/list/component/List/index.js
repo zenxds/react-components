@@ -21,6 +21,7 @@ class LongList extends Component {
     const firstItem = this.$container.querySelector(`.${styles.item}:first-child`)
     const maxIndex = Math.ceil(data.length / visible) - 1
 
+    // 向下时最后一个元素的顶部出现在视口
     let rect = lastItem.getBoundingClientRect()
     if (rect.top - this.top <= this.height && index < maxIndex) {
       this.setState({
@@ -28,6 +29,7 @@ class LongList extends Component {
       })
     }
 
+    // 向上时第一个元素的底部出现在视口
     rect = firstItem.getBoundingClientRect()
     if (rect.bottom - this.top >= 0 && index > 0) {
       this.setState({
