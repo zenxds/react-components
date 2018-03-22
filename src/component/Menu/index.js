@@ -56,6 +56,12 @@ const menuCfg = [
     title: 'Table',
     link: '/table',
     icon: ''
+  },
+
+  {
+    title: '长列表',
+    link: '/list',
+    icon: ''
   }
 ]
 
