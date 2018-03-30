@@ -4,6 +4,8 @@ import { Icon } from 'antd'
 
 import styles from './less/styles.less'
 
+const scrollbarWidth = getScrollbarWidth()
+
 @CSSModules(styles, {
   handleNotFoundStyleName : 'ignore',
   allowMultiple: true
@@ -154,6 +156,7 @@ class DataTable extends Component {
                     </th>
                   })
                 }
+                <th style={{ width: scrollbarWidth + 6, padding: 0 }}></th>
               </tr>
             </thead>
           </table>
@@ -208,4 +211,24 @@ function getTextWidth(text) {
   document.body.removeChild(el)
 
   return width
+}
+
+function getScrollbarWidth() {
+  const outer = document.createElement("div")
+  outer.style.cssText += ";postion: absolute; left: -9999px; top: -9999px; visibility: hidden; width: 100px"
+
+  document.body.appendChild(outer)
+  const widthNoScroll = outer.offsetWidth
+
+  outer.style.overflow = "scroll"
+  // add innerdiv
+  const inner = document.createElement("div")
+  inner.style.cssText += ";width: 100%;"
+  outer.appendChild(inner)
+
+  const widthWithScroll = inner.offsetWidth
+  // remove divs
+  outer.parentNode.removeChild(outer)
+
+  return widthNoScroll - widthWithScroll
 }
