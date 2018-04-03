@@ -117,9 +117,16 @@ class DataTable extends Component {
     return (
       <div styleName="table">
         <div styleName="table-header" ref={elem => {
-          this.$header = elem
+          if (!this.$header) {
+            this.$header = elem
+
+            // 为了处理windows下滚动条的位置
+            this.setState({
+              tableWidth: elem.offsetWidth
+            })
+          }
         }} onScroll={this.onHeaderScroll.bind(this)}>
-          <table>
+          <table style={{ width: this.state.tableWidth }}>
             <colgroup>
               {
                 columns.map(item => {
@@ -156,7 +163,6 @@ class DataTable extends Component {
                     </th>
                   })
                 }
-                <th style={{ width: scrollbarWidth + 6, padding: 0 }}></th>
               </tr>
             </thead>
           </table>
@@ -168,7 +174,7 @@ class DataTable extends Component {
         <div styleName="table-body" className="ui-table-body" ref={elem => {
           this.$body = elem
         }} onScroll={this.onBodyScroll.bind(this)}>
-          <table>
+          <table style={{ width: this.state.tableWidth }}>
             <colgroup>
               {
                 columns.map(item => {
