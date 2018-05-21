@@ -144,6 +144,7 @@ class DataTable extends Component {
                   return <col key={item.dataIndex} data-col={item.dataIndex} style={{ width: item.width }} />
                 })
               }
+              <col style={{ width: scrollbarWidth }} />
             </colgroup>
             <thead>
               <tr>
@@ -174,7 +175,7 @@ class DataTable extends Component {
                     </th>
                   })
                 }
-                <th style={{ width: scrollbarWidth + headerPadding, padding: 0 }}></th>
+                <th />
               </tr>
             </thead>
           </table>
