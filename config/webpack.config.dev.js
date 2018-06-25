@@ -6,8 +6,8 @@ const dxMock = require('dx-mock')
 
 const rules = require('./webpack.rules')
 module.exports = {
+  mode: 'development',
   entry: [
-    'react-hot-loader/patch',
     './src/index.js'
   ],
   output: {
@@ -69,7 +69,8 @@ module.exports = {
           {
             loader: 'less-loader',
             options: {
-              relativeUrls: false
+              relativeUrls: false,
+              javascriptEnabled: true
             }
           }
         ]
@@ -79,7 +80,13 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
-          'less-loader'
+          {
+            loader: 'less-loader',
+            options: {
+              relativeUrls: false,
+              javascriptEnabled: true
+            }
+          }
         ]
       },
       {
@@ -92,14 +99,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'template/index.html'
     }),
-    new webpack.NoEmitOnErrorsPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.ProvidePlugin({
       'React': 'react'
     }),
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('dev')
-    })
+    new webpack.DefinePlugin({})
   ],
   devServer: {
     contentBase: [

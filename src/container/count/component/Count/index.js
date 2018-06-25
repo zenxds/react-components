@@ -52,9 +52,9 @@ class Count extends Component {
     this.timer = raf(tick)
   }
 
-  componentWillReceiveProps(nextProps) {
-    const oldValue = toNumber(this.props.value)
-    const newValue = toNumber(nextProps.value)
+  componentDidUpdate(prevProps, prevState) {
+    const oldValue = toNumber(prevProps.value)
+    const newValue = toNumber(this.props.value)
 
     if (newValue !== oldValue) {
       if (this.timer) {

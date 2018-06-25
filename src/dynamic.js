@@ -10,22 +10,22 @@ class Loader extends Component {
     }
   }
 
-  componentWillMount() {
-    this.load(this.props)
+  componentDidMount() {
+    this.load()
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.load !== this.props.load) {
-      this.load(nextProps)
+  componentDidUpdate(prevProps) {
+    if (prevProps.load !== this.props.load) {
+      this.load()
     }
   }
 
-  load(props) {
+  load() {
     this.setState({
       instance: null
     })
 
-    props.load((instance) => {
+    this.props.load((instance) => {
       this.setState({
         instance: instance.default || instance
       })

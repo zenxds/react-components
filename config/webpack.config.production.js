@@ -2,12 +2,13 @@
 const path = require('path')
 const moment = require('moment')
 const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin')
 
 const rules = require('./webpack.rules')
 module.exports = {
+  mode: 'production',
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, '../build'),
@@ -25,7 +26,8 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract([
+        use: [
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -41,12 +43,13 @@ module.exports = {
               }
             }
           }
-        ])
+        ]
       },
       {
         test: /\.less$/,
         exclude: /(node_modules|antd)/,
-        use: ExtractTextPlugin.extract([
+        use: [
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -68,11 +71,12 @@ module.exports = {
               relativeUrls: false
             }
           }
-        ])
+        ]
       },
       {
         test: /antd\.less$/,
-        use: ExtractTextPlugin.extract([
+        use: [
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -87,8 +91,14 @@ module.exports = {
               }
             }
           },
-          'less-loader'
-        ])
+          {
+            loader: 'less-loader',
+            options: {
+              relativeUrls: false,
+              javascriptEnabled: true
+            }
+          }
+        ]
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
@@ -106,23 +116,18 @@ module.exports = {
     new webpack.DllReferencePlugin({
       manifest: require('../tmp/manifest.json')
     }),
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
-    }),
+    new webpack.DefinePlugin({}),
     new webpack.ProvidePlugin({
       'React': 'react'
     }),
-    new ExtractTextPlugin({
-      disable: false,
-      allChunks: true,
+    new MiniCssExtractPlugin({
+      chunkFilename: '[name].[hash].css',
       filename: '[name].css'
     }),
     new HtmlWebpackPlugin({
       template: 'template/index.prod.html',
       hash: true
     }),
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin(),
     new webpack.BannerPlugin(`${moment().format('YYYY-MM-DD HH:mm:ss')}`)
   ]
 }

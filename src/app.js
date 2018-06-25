@@ -6,6 +6,7 @@ import {
   Link,
   Switch
 } from 'react-router-dom'
+import { hot } from 'react-hot-loader'
 import CSSModules from 'react-css-modules'
 
 import './less/antd.less'
@@ -36,6 +37,7 @@ class App extends Component {
                 <Dynamic exact path="/date" load={require('bundle-loader?lazy!./container/selectDate')} />
                 <Dynamic exact path="/table" load={require('bundle-loader?lazy!./container/table')} />
                 <Dynamic exact path="/list" load={require('bundle-loader?lazy!./container/list')} />
+                <Dynamic exact path="/switchable" load={require('bundle-loader?lazy!./container/switchable')} />
               </Switch>
             </div>
           </div>
@@ -45,4 +47,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default hot(module)(App)

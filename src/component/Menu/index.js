@@ -62,6 +62,12 @@ const menuCfg = [
     title: '长列表',
     link: '/list',
     icon: ''
+  },
+
+  {
+    title: '轮播',
+    link: '/switchable',
+    icon: ''
   }
 ]
 

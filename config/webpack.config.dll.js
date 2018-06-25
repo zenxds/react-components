@@ -4,6 +4,7 @@ const webpack = require('webpack')
 const dependencies = require('../package.json').dependencies
 
 module.exports = {
+  mode: 'production',
   entry: {
     vendor: Object.keys(dependencies).filter(name => name !== 'bundle-loader')
   },
@@ -17,10 +18,7 @@ module.exports = {
       path: path.join(__dirname, '../tmp', 'manifest.json'),
       name: '[name]'
     }),
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
-    }),
-    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.DefinePlugin({}),
     new webpack.BannerPlugin(`${moment().format('YYYY-MM-DD HH:mm:ss')}`)
   ]
 }
