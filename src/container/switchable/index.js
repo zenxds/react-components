@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Switchable from './Switchable'
+import Marquee from './Marquee'
 
 class Page extends Component {
 
@@ -13,13 +13,17 @@ class Page extends Component {
 
   render() {
     return (
-      <Switchable visible={20} itemHeight={21}>
-        {
-          this.state.data.map(item => {
-            return <li key={item}>{ item }</li>
-          })
-        }
-      </Switchable>
+      <div style={{ height: 420 }}>
+        <Marquee direction="vertical">
+          <ul ref={React.createRef()} style={{ margin: 0, padding: 0 }}>
+          {
+            this.state.data.map(item => {
+              return <li key={item}>{ item }</li>
+            })
+          }
+          </ul>
+        </Marquee>
+      </div>
     )
   }
 }
