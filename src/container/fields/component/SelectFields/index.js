@@ -4,7 +4,6 @@
  * 穿梭框和select不满足需求，自己写一个
  */
 import React, { Component, Fragment } from 'react'
-import CSSModules from 'react-css-modules'
 import { Modal, Row, Col, Checkbox, Icon, Radio } from 'antd'
 
 import styles from './less/styles.less'
@@ -15,7 +14,6 @@ import styles from './less/styles.less'
  * onChange
  * value
  */
-@CSSModules(styles)
 class SelectFields extends Component {
 
   constructor(props, context) {

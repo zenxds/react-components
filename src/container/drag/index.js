@@ -1,16 +1,13 @@
 import React, { Component } from 'react'
-import CSSModules from 'react-css-modules'
 
 import Drag from './component/Drag'
 import styles from './less/styles.less'
 
-@CSSModules(styles)
 class Page extends Component {
   constructor(props, context) {
     super(props, context)
 
     this.state = {
-      current: -1,
       list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     }
   }
@@ -18,15 +15,18 @@ class Page extends Component {
   render() {
     return (
       <div>
-        <Drag data={this.state.list} onChange={(data, src, target) => {
-          this.setState({
-            current: target,
-            list: data
-          })
-        }}>
+        <Drag
+          data={this.state.list}
+          onDrop={(data, src, target) => {
+            this.setState({
+              list: data
+            })
+          }}
+          hoverClass={styles['item-hover']}
+        >
           {
             this.state.list.map((item, index) => {
-              return <div key={item} styleName={this.state.current === index ? 'item-active' : 'item'}>{ item }</div>
+              return <div key={item} styleName="item">{ item }</div>
             })
           }
         </Drag>

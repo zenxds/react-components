@@ -1,15 +1,10 @@
 import React, { Component } from 'react'
-import CSSModules from 'react-css-modules'
 import { Icon } from 'antd'
 
 import styles from './less/styles.less'
 
 const scrollbarWidth = getScrollbarWidth()
 
-@CSSModules(styles, {
-  handleNotFoundStyleName : 'ignore',
-  allowMultiple: true
-})
 class DataTable extends Component {
   constructor(props, context) {
     super(props, context)

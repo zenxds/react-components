@@ -1,29 +1,34 @@
-import fetch from 'isomorphic-fetch'
+import axios from 'axios'
 
-export default (input, options={}) => {
-  options = Object.assign({
-    credentials: "same-origin"
-  }, options)
+export default function request(config={}) {
+  config = Object.assign({
+    withCredentials: true,
+    timeout: 30 * 1000
+  }, config)
 
-  if (/post/i.test(options.method)) {
-    let headers = {}
+  return axios(config).then((response) => {
+    const { success, data, msg } = response.data || {}
 
-    if (typeof options.body === 'string') {
-      headers = {
-        "Content-Type": "application/x-www-form-urlencoded; charset=utf-8"
-      }
-    }
-
-    options.headers = Object.assign({}, headers, options.headers || {})
-  }
-
-  return fetch(input, options).then((response) => {
-    return response.json()
-  }).then((response) => {
-    if (response.success) {
-      return response.data
+    if (success) {
+      return data
     } else {
-      throw new Error(response.msg || 'request error')
+      throw new Error(msg || 'request error')
     }
   })
+}
+
+// https://github.com/axios/axios/blob/master/lib/core/Axios.js
+export function get(url, config={}) {
+  return request(Object.assign(config, {
+    method: 'get',
+    url
+  }))
+}
+
+export function post(url, data, config={}) {
+  return request(Object.assign(config, {
+    method: 'post',
+    url,
+    data
+  }))
 }

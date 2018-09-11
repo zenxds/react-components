@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
-import CSSModules from 'react-css-modules'
 
-import request from '../../util/request'
+import { get } from '../../util/request'
 import DataTable from './component/DataTable'
 
 import styles from './less/styles.less'
 
-@CSSModules(styles)
 class Page extends Component {
 
   constructor(props, context) {
@@ -18,7 +16,7 @@ class Page extends Component {
   }
 
   componentDidMount() {
-    request('/table')
+    get('/table')
     .then(data => {
       this.setState({
         data

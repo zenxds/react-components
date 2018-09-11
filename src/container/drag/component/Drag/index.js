@@ -4,49 +4,77 @@ export default class Drag extends Component {
   constructor(props, context) {
     super(props, context)
 
-    this.currentIndex = -1
+    this.state = {
+      start: null,
+      current: null,
+      end: null
+    }
   }
 
   onDragStart(index) {
-    this.currentIndex = index
+    this.setState({
+      start: index,
+      current: index,
+      end: null
+    })
   }
 
   onDragEnter(index) {
-    this.onChange(this.currentIndex, index)
-    this.currentIndex = index
+    this.setState({
+      current: index
+    })
   }
 
-  onDragEnd() {
-    this.currentIndex = -1
+  onDragEnd(index) {
+    this.setState({
+      start: null,
+      current: null,
+      end: index
+    })
   }
 
-  onChange(src, target) {
-    if (src === target) {
+  onDragOver(index, event) {
+    event.preventDefault()
+  }
+
+  onDrop(index) {
+    const { start } = this.state
+    if (start === index) {
       return
     }
 
     const data = [].concat(this.props.data);
 
-    [data[src], data[target]] = [data[target], data[src]]
+    [data[start], data[index]] = [data[index], data[start]]
 
-    if (typeof this.props.onChange === 'function') {
-      return this.props.onChange(data, src, target)
+
+    if (typeof this.props.onDrop === 'function') {
+      this.props.onDrop(data, start, index)
     }
   }
 
   render() {
-    const children = this.props.children
+    const { children, hoverClass } = this.props
+    const { start, current, end } = this.state
 
     return (
       <div className="drag-list">
         {
           children.map((item, index) => {
+            const classNames = [ item.props.className ]
+            if ((index === start || index === current || index === end) && hoverClass) {
+              classNames.push(hoverClass)
+            }
+
             if (isValidElement(item)) {
               return cloneElement(item, {
                 draggable: "true",
                 onDragStart: this.onDragStart.bind(this, index),
                 onDragEnter: this.onDragEnter.bind(this, index),
-                onDragEnd: this.onDragEnd.bind(this, index)
+                onDragEnd: this.onDragEnd.bind(this, index),
+                onDragOver: this.onDragOver.bind(this, index),
+                onDrop: this.onDrop.bind(this, index),
+                className: classNames.join(' ')
               })
             }
 

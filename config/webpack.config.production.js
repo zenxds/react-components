@@ -5,6 +5,8 @@ const webpack = require('webpack')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 
 const rules = require('./webpack.rules')
 module.exports = {
@@ -15,13 +17,29 @@ module.exports = {
     filename: 'main.js',
     chunkFilename: '[name].[hash].js'
   },
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        uglifyOptions: {
+          output: {
+            ascii_only: true
+          },
+          compress: {
+            drop_console: true
+          }
+        }
+      }),
+      new OptimizeCSSAssetsPlugin({}),
+      new webpack.BannerPlugin(`${moment().format('YYYY-MM-DD HH:mm:ss')}`)
+    ]
+  },
   resolve: {
     modules: ['node_modules', 'src']
   },
   module: {
     rules: rules.concat([{
         test: /\.jsx?$/,
-        loader: ['babel-loader'],
+        use: ['babel-loader'],
         exclude: /node_modules/
       },
       {
@@ -32,7 +50,8 @@ module.exports = {
             loader: 'css-loader',
             options: {
               minimize: true,
-              modules: true
+              modules: true,
+              localIdentName: '[hash:base64]'
             }
           },
           {
@@ -54,7 +73,8 @@ module.exports = {
             loader: 'css-loader',
             options: {
               minimize: true,
-              modules: true
+              modules: true,
+              localIdentName: '[hash:base64]'
             }
           },
           {
@@ -75,7 +95,7 @@ module.exports = {
       },
       {
         test: /antd\.less$/,
-        use: [
+        loader: [
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
@@ -101,11 +121,44 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/,
-        use: [
-          'url-loader?limit=8192&name=image/[hash].[ext]'
-          // 'img-loader'
-        ]
+        test: /\.(jpe?g|png|gif)$/,
+        loader: 'url-loader',
+        options: {
+          // Inline files smaller than 10 kB (10240 bytes)
+          limit: 10 * 1024,
+          name: 'image/[hash].[ext]'
+        },
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-url-loader',
+        options: {
+          // Inline files smaller than 10 kB (10240 bytes)
+          limit: 10 * 1024,
+          name: 'image/[hash].[ext]',
+          // Remove the quotes from the url
+          // (they’re unnecessary in most cases)
+          noquotes: true
+        }
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        loader: 'image-webpack-loader',
+        options: {
+          mozjpeg: {
+            quality: 80
+          },
+          // optipng.enabled: false will disable optipng
+          optipng: {
+            enabled: false
+          },
+          pngquant: {
+            quality: '65-90',
+            speed: 4
+          }
+        },
+        // This will apply the loader before the other ones
+        enforce: 'pre'
       }
     ])
   },
@@ -116,7 +169,9 @@ module.exports = {
     new webpack.DllReferencePlugin({
       manifest: require('../tmp/manifest.json')
     }),
-    new webpack.DefinePlugin({}),
+    new webpack.DefinePlugin({
+      API_SERVER_PLACEHOLDER: JSON.stringify('')
+    }),
     new webpack.ProvidePlugin({
       'React': 'react'
     }),
@@ -126,8 +181,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: 'template/index.prod.html',
-      hash: true
-    }),
-    new webpack.BannerPlugin(`${moment().format('YYYY-MM-DD HH:mm:ss')}`)
+      hash: true,
+      random: Math.random().toString().slice(2)
+    })
   ]
 }

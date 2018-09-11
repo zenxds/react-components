@@ -22,7 +22,7 @@ module.exports = {
     rules: rules.concat([
       {
         test: /\.jsx?$/,
-        loader: ['babel-loader', 'eslint-loader'],
+        use: ['babel-loader', 'eslint-loader'],
         exclude: /node_modules/
       },
       {
@@ -83,7 +83,6 @@ module.exports = {
           {
             loader: 'less-loader',
             options: {
-              relativeUrls: false,
               javascriptEnabled: true
             }
           }
@@ -103,7 +102,9 @@ module.exports = {
     new webpack.ProvidePlugin({
       'React': 'react'
     }),
-    new webpack.DefinePlugin({})
+    new webpack.DefinePlugin({
+      API_SERVER_PLACEHOLDER: JSON.stringify('')
+    })
   ],
   devServer: {
     contentBase: [
@@ -115,7 +116,7 @@ module.exports = {
     host: '0.0.0.0',
     disableHostCheck: true,
     before(app){
-      dxMock(app, { root: path.join(__dirname, '../api') })
+      dxMock(app, { root: path.join(__dirname, '../api')})
     }
   }
 }

@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-import CSSModules from 'react-css-modules'
 
 import styles from './less/styles.less'
 
-@CSSModules(styles)
 class LongList extends Component {
   constructor(props, ctx) {
     super(props, ctx)

@@ -12,17 +12,42 @@
     "@babel/preset-react"
   ],
   "env": {
-    "dev": {
+    "development": {
       "plugins": [
-        "transform-decorators-legacy",
-        "transform-class-properties",
-        "react-hot-loader/babel"
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose" : true }],
+        ["import", {
+          "libraryName": "antd",
+          "libraryDirectory": "es"
+        }],
+        "react-hot-loader/babel",
+        ["react-css-modules", {
+          "webpackHotModuleReloading": true,
+          "generateScopedName": "[path][name]__[local]--[hash:base64:5]",
+          "filetypes": {
+            ".less": {
+              "syntax": "postcss-less"
+            }
+          }
+        }]
       ]
     },
     "production": {
       "plugins": [
-        "transform-decorators-legacy",
-        "transform-class-properties"
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose" : true }],
+        ["import", {
+          "libraryName": "antd",
+          "libraryDirectory": "es"
+        }],
+        ["react-css-modules", {
+          "generateScopedName": "[hash:base64]",
+          "filetypes": {
+            ".less": {
+              "syntax": "postcss-less"
+            }
+          }
+        }]
       ]
     }
   }

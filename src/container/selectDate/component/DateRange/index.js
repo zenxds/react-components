@@ -4,11 +4,9 @@ import {
   DatePicker
 } from 'antd'
 import moment from 'moment'
-import CSSModules from 'react-css-modules'
 
 import styles from './less/styles.less'
 
-@CSSModules(styles)
 class DateRange extends Component {
 
   constructor(props, context) {

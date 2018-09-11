@@ -7,7 +7,6 @@ import {
   Switch
 } from 'react-router-dom'
 import { hot } from 'react-hot-loader'
-import CSSModules from 'react-css-modules'
 
 import './less/antd.less'
 import styles from './less/app.less'
@@ -16,7 +15,6 @@ import Header from './component/Header'
 import Menu from './component/Menu'
 import Dynamic from './dynamic'
 
-@CSSModules(styles)
 class App extends Component {
   render() {
     return (
