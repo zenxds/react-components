@@ -68,6 +68,12 @@ const menuCfg = [
     title: '轮播',
     link: '/switchable',
     icon: ''
+  },
+
+  {
+    title: '节点图',
+    link: '/node-flow',
+    icon: ''
   }
 ]
 

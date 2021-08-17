@@ -1,38 +1,50 @@
-import { Component } from 'react'
-import { Icon } from 'antd'
+import { Component, Fragment } from 'react'
+import { Icon, Checkbox, message } from 'antd'
+import PropTypes from 'prop-types'
 
-import styles from './tree.less'
+import './tree.less'
 
 export class Tree extends Component {
-  constructor(props, context) {
-    super(props, context)
+  constructor(props) {
+    super(props)
 
     this.state = {
-      // 顶层节点
+      // 最顶层节点
       data: []
     }
     this.nodes = {}
   }
 
   componentDidMount() {
-    this.props.loadNode().then(data => {
-      this.setState({
-        data
-      })
-    })
+    this.fetchData()
   }
 
-  renderNode(item, props) {
+  fetchData() {
+    this.props
+      .fetchNodeData()
+      .then(data => {
+        this.setState({
+          data
+        })
+      })
+      .catch(err => {
+        message.error(err + '')
+      })
+  }
+
+  renderNode(node, props) {
+    const key = node.key || node.title
+    const { level } = props
+
     return (
       <TreeNode
-        ref={node => {
-          this.nodes[item.title] = node
-        }}
         {...props}
-        key={item.title}
-        title={item.title}
-        isDir={this.props.isDir(item)}
-        level={props.level ?  props.level + 1 : 1}
+        ref={node => {
+          this.nodes[key] = node
+        }}
+        key={key}
+        node={node}
+        level={level ? level + 1 : 1}
         renderNode={this.renderNode.bind(this)}
       />
     )
@@ -40,98 +52,182 @@ export class Tree extends Component {
 
   render() {
     return (
-      <ul className={styles.tree}>
-        {
-          this.state.data.map(item => {
-            return this.renderNode(item, this.props)
-          })
-        }
+      <ul styleName="tree">
+        {this.state.data.map(node => {
+          return this.renderNode(node, this.props)
+        })}
       </ul>
     )
   }
 }
 
+Tree.propTypes = {
+  fetchNodeData: PropTypes.func.isRequired
+}
+
 export class TreeNode extends Component {
-  constructor(props, context) {
-    super(props, context)
+  constructor(props) {
+    super(props)
 
     this.state = {
-      open: false,
-      loaded: false,
-      loading: false,
+      isOpen: false,
+      isLoading: false,
+      isLoaded: false,
+      checked: !!props.node.checked,
       data: []
     }
   }
 
-  onToggle(e) {
-    e.stopPropagation()
+  handleNodeClick() {
+    const { node, onNodeClick } = this.props
 
-    const open = !this.state.open
+    if (onNodeClick) {
+      onNodeClick(node)
+    }
+  }
+
+  handleToggle() {
+    const isOpen = !this.state.isOpen
 
     // 打开时加载数据
-    if (open && !this.state.loaded) {
-      this.load()
+    if (isOpen && !this.state.isLoaded) {
+      this.fetchData()
     }
 
     this.setState({
-      open
+      isOpen
     })
   }
 
-  load() {
-    if (this.state.loading) {
+  handleClick(e) {
+    e.stopPropagation()
+
+    const { node, isDir } = this.props
+
+    if (isDir(node)) {
+      this.handleToggle()
+    } else {
+      this.handleNodeClick()
+    }
+  }
+
+  fetchData() {
+    if (this.state.isLoading) {
       return
     }
 
     this.setState({
-      loading: true
+      isLoading: true
     })
 
-    this.props.loadNode(this.props.title)
-    .then(data => {
-      this.setState({
-        loading: false,
-        loaded: true,
-        data
+    this.props
+      .fetchNodeData(this.props.node)
+      .then(data => {
+        this.setState({
+          isLoading: false,
+          isLoaded: true,
+          data
+        })
       })
-    })
-    .catch(err => {
-      this.setState({
-        loading: false
+      .catch(err => {
+        this.setState({
+          isLoading: false
+        })
+
+        message.error(err + '')
       })
+  }
+
+  renderCheckbox() {
+    const { checkable, node, onCheckChange } = this.props
+    const { checked } = this.state
+
+    if (!checkable || node.checkable === false) {
+      return null
+    }
+
+    return (
+      <Checkbox
+        checked={checked}
+        disabled={node.disabled}
+        onClick={e => {
+          e.stopPropagation()
+        }}
+        onChange={e => {
+          this.setState({
+            checked: e.target.checked
+          })
+
+          if (onCheckChange) {
+            onCheckChange(node, e.target.checked)
+          }
+        }}
+      />
+    )
+  }
+
+  renderIcon() {
+    const { node, isDir } = this.props
+    const { isOpen } = this.state
+
+    if (!isDir(node)) {
+      return null
+    }
+
+    return (
+      <Fragment>
+        <Icon type={ isOpen ? 'caret-down' : 'caret-right'} styleName="arrow" />
+        <Icon type={ isOpen ? 'folder-open' : 'folder'} styleName="folder" />
+      </Fragment>
+    )
+  }
+
+  renderChildren() {
+    const { renderNode } = this.props
+    const { isOpen, data } = this.state
+
+    if (!data.length) {
+      return null
+    }
+
+    const children = data.map(item => {
+      return renderNode(item, this.props)
     })
+
+    return <ul styleName={isOpen ? 'open' : ''}>{children}</ul>
   }
 
   render() {
-    const { isDir, level, indent } = this.props
-    const children = this.state.data.map(item => {
-      return this.props.renderNode(item, this.props)
-    })
-    // 为了hover时标题背景变色，动态计算padding的距离
-    const paddingLeft = (level - 1) * indent
+    const { node, getNodeStyle, level } = this.props
+    const style = getNodeStyle ? getNodeStyle(node, level) : {}
 
     return (
       <li>
         <div
-          style={{ paddingLeft }}
-          className={styles['tree-title']}
-          onClick={this.onToggle.bind(this)}
+          styleName="tree-title"
+          title={node.title}
+          style={style}
+          onClick={this.handleClick.bind(this)}
         >
-          { isDir ? <Icon type={ this.state.open ? 'caret-down' : 'caret-right'} className={styles.arrow} /> : null }
-          { isDir ? <Icon type={ this.state.open ? 'folder-open' : 'folder'} className={styles.folder} /> : null}
-          { this.props.title }
+          { this.renderIcon() }
+          { node.title }
+          { this.renderCheckbox() }
         </div>
 
-        {
-          this.state.data.length ? (
-            <ul className={ this.state.open ? styles.open : ''}>
-            {
-              children
-            }
-            </ul>
-          ) : null
-        }
+        { this.renderChildren() }
       </li>
     )
   }
+}
+
+TreeNode.propTypes = {
+  node: PropTypes.object.isRequired,
+  fetchNodeData: PropTypes.func.isRequired,
+  renderNode: PropTypes.func.isRequired,
+  isDir: PropTypes.func.isRequired,
+  level: PropTypes.number.isRequired,
+  getNodeStyle: PropTypes.func,
+  onNodeClick: PropTypes.func,
+  onCheckChange: PropTypes.func,
+  checkable: PropTypes.bool
 }

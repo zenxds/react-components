@@ -7,8 +7,8 @@ class Page extends Component {
     super(props, context)
   }
 
-  async loadNode(parentId) {
-    if (!parentId) {
+  async fetchNodeData(item) {
+    if (!item) {
       return [
         {
           title: '0-0'
@@ -19,18 +19,25 @@ class Page extends Component {
       ]
     }
 
-    return [0, 1].map(item => {
+    return [0, 1].map(i => {
       return {
-        title: parentId + '-' + item
+        title: item.title + '-' + i
       }
     })
   }
 
   getTree() {
     return (
-      <Tree loadNode={this.loadNode.bind(this)} isDir={item => {
-        return true
-      }} indent={32} />
+      <Tree
+        fetchNodeData={this.fetchNodeData.bind(this)}
+        getNodeStyle={(node, level) => {
+          return {
+            paddingLeft: (level - 1) * 12
+          }
+        }}
+        checkable
+        isDir={item => true}
+      />
     )
   }
 

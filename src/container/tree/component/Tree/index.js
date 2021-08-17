@@ -13,7 +13,7 @@ export class Tree extends Component {
 export class TreeNode extends Component {
   render() {
     const { children } = this.props
-    const hasChildren =  children && children.length
+    const hasChildren = children && children.length
 
     return (
       <li>

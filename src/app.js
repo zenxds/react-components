@@ -36,6 +36,7 @@ class App extends Component {
                 <Dynamic exact path="/table" load={require('bundle-loader?lazy!./container/table')} />
                 <Dynamic exact path="/list" load={require('bundle-loader?lazy!./container/list')} />
                 <Dynamic exact path="/switchable" load={require('bundle-loader?lazy!./container/switchable')} />
+                <Dynamic exact path="/node-flow" load={require('bundle-loader?lazy!./container/node-flow')} />
               </Switch>
             </div>
           </div>

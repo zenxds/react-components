@@ -1,34 +1,60 @@
+@import '~less/variables.less';
+@import '~less/fn.less';
+
 .tree {
-  padding: 0 10px;
+  padding: 0;
 
   ul {
     padding: 0;
     display: none;
   }
+
+  li {
+    list-style: none;
+  }
+
   .open {
     display: block;
   }
 
-  li {
-    list-style: none;
-    line-height: 20px;
-  }
-
   .tree-title {
+    position: relative;
+    line-height: 32px;
     cursor: pointer;
     user-select: none;
 
-    &:hover {
-      background: #ccc;
+    :global {
+      .ant-checkbox-wrapper {
+        float: right;
+      }
+
+      .ant-checkbox {
+        visibility: hidden;
+      }
+
+      .ant-checkbox-checked {
+        visibility: visible;
+      }
     }
-  }
 
-  .arrow {
-    color: #999;
-    margin-right: 5px;
-  }
+    &:hover {
+      color: @main-color;
+      background: #f0fbff;
 
-  .folder {
-    margin-right: 5px;
+      :global {
+        .ant-checkbox {
+          visibility: visible;
+        }
+      }
+    }
+
+    .arrow {
+      color: #999;
+      margin-right: 5px;
+    }
+
+    .folder {
+      margin-right: 5px;
+    }
   }
 }
