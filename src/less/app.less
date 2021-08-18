@@ -1,0 +1,48 @@
+/*
+ * 全局样式
+ */
+@import './variables.less';
+
+:global {
+  html, body, #app, .app-root {
+    height: 100%;
+  }
+
+  body {
+    min-width: 1000px;
+    overflow: auto;
+  }
+
+  .app-root {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-header {
+    display: flex;
+    height: @header-height;
+    background: @menu-bg-color;
+  }
+
+  .app-wrapper {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .app-menu {
+    width: @menu-width;
+    height: 100%;
+    overflow: auto;
+    background: @menu-bg-color;
+  }
+
+  .app-content {
+    position: relative;
+    flex: 1;
+    background: #f5f5f5;
+    padding: 30px;
+    overflow: auto;
+  }
+}

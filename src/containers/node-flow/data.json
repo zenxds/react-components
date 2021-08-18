@@ -1,0 +1,218 @@
+{
+  "data": {
+    "appId": 1,
+    "coordinate": "1250,100",
+    "customPolicyCondition": "",
+    "departmentId": 1,
+    "description": "",
+    "eventId": 212,
+    "eventName": "test_ic",
+    "executionCondition": "",
+    "hitHandle": "",
+    "id": 5314,
+    "industryId": 1,
+    "name": "不同来源测试",
+    "nodeList": [
+      {
+        "appId": 1,
+        "code": "p_1_212_0_1628498410165",
+        "coordinate": "1350,211",
+        "customPolicyCondition": "",
+        "customsConditionResult": 0,
+        "envType": 0,
+        "eventId": 212,
+        "executionCondition": "(1)",
+        "executionConditionDescription": "当（来源=1）",
+        "id": 5315,
+        "name": "设备关联用户限制（1）",
+        "parentPolicyId": 5314,
+        "policyConditionRules": [
+          {
+            "defaultScore": 0.0,
+            "hitHandle": "1",
+            "id": 23474,
+            "idx": 1,
+            "leftValue": "source",
+            "leftValueDataType": 0,
+            "leftValueDiff": false,
+            "leftValueName": "来源",
+            "leftValueType": 3,
+            "name": "",
+            "operator": "equals",
+            "rightValue": "1",
+            "rightValueDiff": false,
+            "rightValueName": "1",
+            "rightValueType": 2,
+            "ruleFieldsName": [
+              "来源",
+              "1"
+            ],
+            "ruleStatus": 1,
+            "type": 2,
+            "weightExpression": ""
+          }
+        ],
+        "policyExecutionRelations": [],
+        "policyHitSuggestions": [],
+        "policyMode": 2,
+        "policyRules": [
+          {
+            "defaultScore": 0.0,
+            "hitHandle": "2",
+            "id": 23473,
+            "idx": 1,
+            "leftValue": "z_1_test_ic-hardid-1h-association-user_id-1",
+            "leftValueDataType": 0,
+            "leftValueDiff": false,
+            "leftValueName": "z_1_test_ic-hardid-1h-association-user_id-1",
+            "leftValueType": 4,
+            "name": "",
+            "operator": "gt",
+            "rightValue": "1",
+            "rightValueDiff": false,
+            "rightValueName": "1",
+            "rightValueType": 2,
+            "ruleFieldsName": [
+              "近1小时同设备关联用户id个数",
+              "1"
+            ],
+            "ruleStatus": 1,
+            "type": 1,
+            "weightExpression": ""
+          }
+        ],
+        "status": 1,
+        "subPolicyId": "5317"
+      },
+      {
+        "appId": 1,
+        "code": "p_1_212_0_1628498411603",
+        "coordinate": "1301,212",
+        "customPolicyCondition": "",
+        "customsConditionResult": 0,
+        "envType": 0,
+        "eventId": 212,
+        "executionCondition": "(1)",
+        "executionConditionDescription": "当（来源=2）",
+        "id": 5316,
+        "name": "设备关联用户限制（2）",
+        "parentPolicyId": 5314,
+        "policyConditionRules": [
+          {
+            "defaultScore": 0.0,
+            "hitHandle": "1",
+            "id": 23476,
+            "idx": 1,
+            "leftValue": "source",
+            "leftValueDataType": 0,
+            "leftValueDiff": false,
+            "leftValueName": "来源",
+            "leftValueType": 3,
+            "name": "",
+            "operator": "equals",
+            "rightValue": "2",
+            "rightValueDiff": false,
+            "rightValueName": "2",
+            "rightValueType": 2,
+            "ruleFieldsName": [
+              "来源",
+              "2"
+            ],
+            "ruleStatus": 1,
+            "type": 2,
+            "weightExpression": ""
+          }
+        ],
+        "policyExecutionRelations": [],
+        "policyHitSuggestions": [],
+        "policyMode": 2,
+        "policyRules": [
+          {
+            "defaultScore": 0.0,
+            "hitHandle": "2",
+            "id": 23475,
+            "idx": 1,
+            "leftValue": "z_1_test_ic-hardid-1h-association-user_id-1",
+            "leftValueDataType": 0,
+            "leftValueDiff": false,
+            "leftValueName": "z_1_test_ic-hardid-1h-association-user_id-1",
+            "leftValueType": 4,
+            "name": "",
+            "operator": "gt",
+            "rightValue": "2",
+            "rightValueDiff": false,
+            "rightValueName": "2",
+            "rightValueType": 2,
+            "ruleFieldsName": [
+              "近1小时同设备关联用户id个数",
+              "2"
+            ],
+            "ruleStatus": 1,
+            "type": 1,
+            "weightExpression": ""
+          }
+        ],
+        "status": 1,
+        "subPolicyId": "-1"
+      },
+      {
+        "appId": 1,
+        "code": "p_1_212_0_1628498412429",
+        "coordinate": "1135,284",
+        "customPolicyCondition": "",
+        "customsConditionResult": 0,
+        "envType": 0,
+        "eventId": 212,
+        "executionCondition": "",
+        "executionConditionDescription": "",
+        "id": 5317,
+        "name": "设备异常拦截",
+        "parentPolicyId": 5314,
+        "policyConditionRules": [],
+        "policyExecutionRelations": [],
+        "policyHitSuggestions": [],
+        "policyMode": 2,
+        "policyRules": [
+          {
+            "defaultScore": 0.0,
+            "hitHandle": "3",
+            "id": 23477,
+            "idx": 1,
+            "leftValue": "hardid",
+            "leftValueDataType": 0,
+            "leftValueDiff": false,
+            "leftValueName": "设备指纹",
+            "leftValueType": 3,
+            "name": "",
+            "operator": "isEmpty",
+            "rightValue": "",
+            "rightValueDiff": false,
+            "rightValueType": 0,
+            "ruleFieldsName": [
+              "设备指纹",
+              ""
+            ],
+            "ruleStatus": 1,
+            "type": 1,
+            "weightExpression": ""
+          }
+        ],
+        "status": 1,
+        "subPolicyId": "-1"
+      }
+    ],
+    "policyConditionRules": [],
+    "policyId": "p_1_212_0_1628498409545",
+    "policyMode": 6,
+    "priority": 32,
+    "pubStatus": 1,
+    "riskId": "1",
+    "riskName": "垃圾注册",
+    "samplingRate": 1.0,
+    "sourceName": "不同来源测试",
+    "status": 1,
+    "subPolicyId": "5315,5316",
+    "type": 4
+  },
+  "success": true
+}

@@ -1,0 +1,130 @@
+@main_color: #0e7df0;
+
+.fn-text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+ :global {
+  .policy-flow-editor-container {
+    .editor-node {
+      position: absolute;
+      width: 138px;
+      height: 32px;
+      padding: 0 26px;
+      border: 1px solid @main_color;
+      border-radius: 2px;
+      background: rgba(255, 255, 255, 0.8);
+      text-align: left;
+      cursor: move;
+      user-select: none;
+
+      i {
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        width: 16px;
+        height: 16px;
+        transform: translateY(-50%);
+        color: @main_color;
+
+        svg {
+          vertical-align: top;
+        }
+
+        svg path {
+          fill: #fff;
+        }
+        svg circle {
+          fill: currentColor;
+        }
+      }
+    }
+
+    .editor-node-start,
+    .editor-node-end {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      padding: 0;
+      border: none;
+      border-radius: 2px;
+      background: rgba(255, 255, 255, 0.8);
+      text-align: left;
+      cursor: move;
+      user-select: none;
+    }
+
+    .editor-node-start {
+      .start-icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/start-node.svg);
+      }
+    }
+
+    .editor-node-end {
+      .end-icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/end-node.svg);
+      }
+    }
+
+    .editor-node-content {
+      .fn-text-overflow();
+      line-height: 32px;
+      text-align: center;
+    }
+
+    .editor-node-condition {
+      .fn-text-overflow();
+      position: absolute;
+      top: -30px;
+      left: 0;
+      width: 100%;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      background: #fff;
+
+      &:hover {
+        width: auto;
+        overflow: visible;
+        background: #fff;
+        z-index: 200;
+      }
+    }
+
+    .editor-node-entrance,
+    .editor-node-export {
+      position: absolute;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 1px solid @main_color;
+      background: #fff;
+
+      &:hover {
+        border-color: #000;
+      }
+    }
+
+    .editor-node-entrance {
+      top: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    .editor-node-export {
+      bottom: 0;
+      transform: translate(-50%, 50%);
+      cursor: crosshair;
+      border: 1px solid #BFBFBF;
+      background: #fff;
+    }
+  }
+}

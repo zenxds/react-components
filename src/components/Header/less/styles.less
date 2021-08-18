@@ -1,0 +1,53 @@
+@import '~@dx/xbee/color.less';
+@import '~less/variables.less';
+@import '~less/fn.less';
+
+.logo {
+  .fn-hide-text();
+  width: @menu-width;
+  height: @header-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
+.header-info {
+  flex: 1;
+  text-align: right;
+  line-height: @header-height;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
+  z-index: 1;
+
+  a {
+    display: inline-block;
+    vertical-align: top;
+    color: @black65;
+    padding: 0 8px;
+  }
+
+  a:hover {
+    color: @main_color;
+    background: @main_bg_color;
+  }
+}
+
+.user-info {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: @header-height;
+  cursor: pointer;
+  padding: 0 12px;
+
+  .user-name {
+    display: inline-block;
+    max-width: 160px;
+    .fn-text-overflow();
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "children": [
+        {
+          "code": "node-flow",
+          "path": "/node-flow",
+          "name": "节点图"
+        },
+        {
+          "code": "drag",
+          "path": "/drag",
+          "name": "拖拽"
+        },
+        {
+          "code": "switchable",
+          "path": "/switchable",
+          "name": "滚动"
+        },
+        {
+          "code": "tree",
+          "path": "/tree",
+          "name": "树"
+        },
+        {
+          "code": "dtree",
+          "path": "/dtree",
+          "name": "动态树"
+        },
+        {
+          "code": "count",
+          "path": "/count",
+          "name": "数字滚动"
+        },
+        {
+          "code": "list",
+          "path": "/list",
+          "name": "长列表滚动"
+        },
+        {
+          "code": "fields",
+          "path": "/fields",
+          "name": "字段选择"
+        }
+      ],
+      "code": "components",
+      "name": "组件库"
+    }
+  ],
+  "retCode": 200,
+  "success": true
+}
