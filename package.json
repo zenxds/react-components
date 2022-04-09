@@ -111,7 +111,7 @@
     "lottie-web": "^5.5.10",
     "mobx": "5",
     "mobx-react": "5",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "prop-types": "^15.6.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
